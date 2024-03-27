@@ -21,8 +21,6 @@ namespace Electronic_magazine.Forms
 
         private void BtnClose_Click(object sender, EventArgs e)
         {
-            StudentMainForm studentMainForm = new StudentMainForm();
-            studentMainForm.UpdatePhoto(PhotoPictureBox.Image);
             Close();
         }
 
@@ -113,11 +111,12 @@ namespace Electronic_magazine.Forms
                 {
                     PhotoPictureBox.Image = new Bitmap(openFileDialog.FileName);
                 }
-                catch 
+                catch
                 {
                     MessageBox.Show("Невозможно загрузить эту картинку", "Ошибка загрузки", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
+
     }
 }

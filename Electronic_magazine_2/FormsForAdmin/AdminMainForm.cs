@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Electronic_diary.FormsForAdmin;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,29 +28,10 @@ namespace Electronic_magazine.FormsForAdmin
             WindowState = FormWindowState.Minimized;
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnSaveGroup_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
+            AddUserForm addUser = new AddUserForm();
+            addUser.ShowDialog();
         }
     }
 }

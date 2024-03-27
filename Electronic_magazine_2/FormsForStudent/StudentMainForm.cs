@@ -1,6 +1,7 @@
 ﻿using Electronic_diary.Classes;
 using Electronic_diary.Classes.Entities;
 using Electronic_diary.Classes.weekday;
+using Electronic_diary.FormsForStudent;
 using Electronic_magazine.Forms;
 using System;
 using System.Collections.Generic;
@@ -20,11 +21,6 @@ namespace Electronic_magazine
         public StudentMainForm()
         {
             InitializeComponent();
-        }
-
-        public void UpdatePhoto(Image image)
-        {
-            StudentPhotoPictureBox.Image = image;
         }
         private void BtnClose_Click(object sender, EventArgs e)
         {
@@ -267,6 +263,9 @@ namespace Electronic_magazine
         {
             StudentProfileForm studentProfileForm = new StudentProfileForm();
             studentProfileForm.ShowDialog();
+            var imageMemoryStream = new MemoryStream(CurrentData.CurrentStudent.Photo);
+            StudentPhotoPictureBox.Image = Image.FromStream(imageMemoryStream);
+
         }
 
         private void Lable_Click(object sender, EventArgs e)
@@ -279,9 +278,15 @@ namespace Electronic_magazine
                     return;
                 }
                 CurrentData.CurrentSubject = subjects;
-            }            
+            }
             CardOfSubjectForm card = new CardOfSubjectForm();
             card.ShowDialog();
+        }
+
+        private void Evaluations_Click(object sender, EventArgs e)
+        {
+            EvaluationsForm evaluationsForm = new EvaluationsForm();
+            evaluationsForm.ShowDialog();
         }
     }
 }

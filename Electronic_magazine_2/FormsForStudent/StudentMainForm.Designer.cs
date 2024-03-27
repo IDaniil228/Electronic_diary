@@ -71,7 +71,7 @@
             FullNameLable = new Label();
             StudentPhotoPictureBox = new PictureBox();
             panel4 = new Panel();
-            button3 = new Button();
+            Evaluations = new Button();
             BtnProfile = new Button();
             button2 = new Button();
             UpperPanel.SuspendLayout();
@@ -670,7 +670,7 @@
             // panel4
             // 
             panel4.BackColor = Color.White;
-            panel4.Controls.Add(button3);
+            panel4.Controls.Add(Evaluations);
             panel4.Controls.Add(BtnProfile);
             panel4.Controls.Add(button2);
             panel4.Location = new Point(0, 316);
@@ -679,17 +679,18 @@
             panel4.Size = new Size(227, 484);
             panel4.TabIndex = 2;
             // 
-            // button3
+            // Evaluations
             // 
-            button3.BackColor = Color.White;
-            button3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button3.Location = new Point(49, 252);
-            button3.Margin = new Padding(3, 4, 3, 4);
-            button3.Name = "button3";
-            button3.Size = new Size(116, 45);
-            button3.TabIndex = 5;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = false;
+            Evaluations.BackColor = Color.White;
+            Evaluations.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            Evaluations.Location = new Point(37, 155);
+            Evaluations.Margin = new Padding(3, 4, 3, 4);
+            Evaluations.Name = "Evaluations";
+            Evaluations.Size = new Size(164, 45);
+            Evaluations.TabIndex = 5;
+            Evaluations.Text = "Оценки";
+            Evaluations.UseVisualStyleBackColor = false;
+            Evaluations.Click += Evaluations_Click;
             // 
             // BtnProfile
             // 
@@ -708,7 +709,7 @@
             // 
             button2.BackColor = Color.White;
             button2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button2.Location = new Point(20, 182);
+            button2.Location = new Point(37, 219);
             button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
             button2.Size = new Size(164, 45);
@@ -752,7 +753,7 @@
         private System.Windows.Forms.Button BtnClose;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button BtnMinimaze;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Evaluations;
         private System.Windows.Forms.Button BtnProfile;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label MondayLable;

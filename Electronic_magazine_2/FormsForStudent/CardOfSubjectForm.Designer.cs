@@ -41,7 +41,7 @@
             BtnEnter.Cursor = Cursors.Hand;
             BtnEnter.FlatStyle = FlatStyle.Flat;
             BtnEnter.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            BtnEnter.Location = new Point(143, 463);
+            BtnEnter.Location = new Point(145, 479);
             BtnEnter.Margin = new Padding(3, 4, 3, 4);
             BtnEnter.Name = "BtnEnter";
             BtnEnter.Size = new Size(122, 59);
@@ -73,7 +73,7 @@
             // NotesRichTextBox
             // 
             NotesRichTextBox.BorderStyle = BorderStyle.FixedSingle;
-            NotesRichTextBox.Location = new Point(17, 228);
+            NotesRichTextBox.Location = new Point(17, 213);
             NotesRichTextBox.Margin = new Padding(3, 4, 3, 4);
             NotesRichTextBox.Name = "NotesRichTextBox";
             NotesRichTextBox.Size = new Size(378, 205);
@@ -83,7 +83,7 @@
             // NoteLable
             // 
             NoteLable.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            NoteLable.Location = new Point(17, 193);
+            NoteLable.Location = new Point(17, 178);
             NoteLable.Name = "NoteLable";
             NoteLable.Size = new Size(104, 31);
             NoteLable.TabIndex = 15;

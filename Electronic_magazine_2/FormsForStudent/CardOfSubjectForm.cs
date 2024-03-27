@@ -23,19 +23,20 @@ namespace Electronic_magazine
             using (var context = new DiaryContext())
             {
                 var note = context.Notes.Where(n => n.StudentId == CurrentData.CurrentStudent.StudentId).Single();
+                CurrentData.CurrentSubject.Description = NotesRichTextBox.Text;
                 switch (CurrentData.CurrentSubject.Title)
                 {
                     case "Мат.анализ":
-                        note.Matanalysis = NotesRichTextBox.Text;
+                        note.Matanalysis = CurrentData.CurrentSubject.Description;
                         break;
                     case "Алгебра и геометрия":
-                        note.AlgebraAndGeometry = NotesRichTextBox.Text;
+                        note.AlgebraAndGeometry = CurrentData.CurrentSubject.Description;
                         break;
                     case "Физическая культура":
-                        note.Physical = NotesRichTextBox.Text;
+                        note.Physical = CurrentData.CurrentSubject.Description;
                         break;
                     case "Анлг. яз":
-                        note.English = NotesRichTextBox.Text;
+                        note.English = CurrentData.CurrentSubject.Description;
                         break;
                 }
                 context.SaveChanges();

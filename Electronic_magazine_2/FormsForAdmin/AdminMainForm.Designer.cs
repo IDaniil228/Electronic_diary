@@ -35,7 +35,6 @@
             label35 = new Label();
             pictureBox1 = new PictureBox();
             panel4 = new Panel();
-            button3 = new Button();
             BtnProfile = new Button();
             button2 = new Button();
             tableLayoutPanel1 = new TableLayoutPanel();
@@ -172,12 +171,10 @@
             pictureBox1.Size = new Size(135, 135);
             pictureBox1.TabIndex = 35;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // panel4
             // 
             panel4.BackColor = SystemColors.Control;
-            panel4.Controls.Add(button3);
             panel4.Controls.Add(BtnProfile);
             panel4.Controls.Add(button2);
             panel4.Location = new Point(0, 316);
@@ -186,28 +183,15 @@
             panel4.Size = new Size(227, 484);
             panel4.TabIndex = 3;
             // 
-            // button3
-            // 
-            button3.BackColor = Color.White;
-            button3.FlatStyle = FlatStyle.Popup;
-            button3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button3.Location = new Point(60, 255);
-            button3.Margin = new Padding(3, 4, 3, 4);
-            button3.Name = "button3";
-            button3.Size = new Size(116, 45);
-            button3.TabIndex = 5;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = false;
-            // 
             // BtnProfile
             // 
             BtnProfile.BackColor = Color.White;
             BtnProfile.FlatStyle = FlatStyle.Popup;
             BtnProfile.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            BtnProfile.Location = new Point(37, 60);
+            BtnProfile.Location = new Point(37, 46);
             BtnProfile.Margin = new Padding(3, 4, 3, 4);
             BtnProfile.Name = "BtnProfile";
-            BtnProfile.Size = new Size(164, 45);
+            BtnProfile.Size = new Size(164, 60);
             BtnProfile.TabIndex = 4;
             BtnProfile.Text = "Профиль";
             BtnProfile.UseVisualStyleBackColor = false;
@@ -217,13 +201,14 @@
             button2.BackColor = Color.White;
             button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button2.Location = new Point(37, 166);
+            button2.Location = new Point(37, 126);
             button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(164, 45);
+            button2.Size = new Size(164, 60);
             button2.TabIndex = 3;
-            button2.Text = "Уведомления";
+            button2.Text = "Создать пользователя";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // tableLayoutPanel1
             // 
@@ -716,7 +701,6 @@
             SelectGroup.Size = new Size(221, 28);
             SelectGroup.TabIndex = 5;
             SelectGroup.Text = "Выбрать группу";
-            SelectGroup.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // ChengeGroupsPanel
             // 
@@ -746,7 +730,6 @@
             btnAdd.TabIndex = 15;
             btnAdd.Text = "Добавить\r\n";
             btnAdd.UseVisualStyleBackColor = false;
-            btnAdd.Click += btnAdd_Click;
             // 
             // textBox1
             // 
@@ -755,7 +738,6 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(183, 27);
             textBox1.TabIndex = 14;
-            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // btnClearGroup
             // 
@@ -782,7 +764,6 @@
             BtnSaveGroup.TabIndex = 12;
             BtnSaveGroup.Text = "Сохранить таблицу \r\n";
             BtnSaveGroup.UseVisualStyleBackColor = false;
-            BtnSaveGroup.Click += BtnSaveGroup_Click;
             // 
             // SelectGroupComboBox
             // 
@@ -876,7 +857,6 @@
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button BtnProfile;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
