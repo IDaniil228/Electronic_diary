@@ -1,13 +1,5 @@
 ﻿using Electronic_diary.Classes;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using Electronic_diary.Classes.Entities;
 
 namespace Electronic_diary.FormsForAdmin
 {
@@ -17,18 +9,26 @@ namespace Electronic_diary.FormsForAdmin
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Закрытие формы
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnClose_Click(object sender, EventArgs e)
         {
             Close();
         }
-
+        /// <summary>
+        /// Сворачивание формы
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnMinimaze_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
         }
         /// <summary>
-        /// 
+        /// Разблокировка элементов управления после выбора роли
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -59,7 +59,11 @@ namespace Electronic_diary.FormsForAdmin
                 GroupLable.Visible = false;
             }
         }
-
+        /// <summary>
+        /// Запись нового пользователя в БД
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnEnter_Click(object sender, EventArgs e)
         {
             using (var context = new DiaryContext())
@@ -80,10 +84,35 @@ namespace Electronic_diary.FormsForAdmin
                     newStudent.Surname = SurnameTextBox.Text;
                     newStudent.Name = NameTextBox.Text;
                     newStudent.Patronymic = PatronymicTextBox.Text;
+                    newStudent.Password = PasswordTextBox.Text;
+                    newStudent.NumberGroup = GroupComboBox.Text;
                     context.Students.Add(newStudent);
+                    context.SaveChanges();
+                    MessageBox.Show("Новый студент зарегистрирован", "Регистрация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Close();
                 }
-                context.SaveChanges();
-                return;
+                if (SelectRole.Text == "Администратор")
+                {
+                    var admins = context.Admins;
+                    foreach (var admin in admins)
+                    {
+                        if (admin.Login == LoginTextBox.Text)
+                        {
+                            MessageBox.Show("Такой логин уже существует!", "Ошибка регистрации");
+                            return;
+                        }
+                    }
+                    Admin newAdmin = new Admin();
+                    newAdmin.Login = LoginTextBox.Text;
+                    newAdmin.Surname = SurnameTextBox.Text;
+                    newAdmin.Name = NameTextBox.Text;
+                    newAdmin.Patronymic = PatronymicTextBox.Text;
+                    newAdmin.Password = PasswordTextBox.Text;
+                    context.Admins.Add(newAdmin);
+                    context.SaveChanges();
+                    MessageBox.Show("Новый студент зарегистрирован", "Регистрация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Close();
+                }
             }
         }
     }

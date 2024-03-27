@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Electronic_diary.Classes.weekday;
+﻿using Electronic_diary.Classes.weekday;
 
 namespace Electronic_diary.Classes.Entities;
 

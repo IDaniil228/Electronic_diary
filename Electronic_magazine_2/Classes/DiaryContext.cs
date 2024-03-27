@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Electronic_diary.Classes.Entities;
+﻿using Electronic_diary.Classes.Entities;
 using Electronic_diary.Classes.weekday;
 using Microsoft.EntityFrameworkCore;
 

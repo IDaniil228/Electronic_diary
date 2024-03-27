@@ -32,6 +32,7 @@
             BtnMinimaze = new Button();
             BtnClose = new Button();
             panel1 = new Panel();
+            GroupComboBox = new ComboBox();
             BtnEnter = new Button();
             GroupLable = new Label();
             PasswordTextBox = new TextBox();
@@ -46,7 +47,6 @@
             NameLabel = new Label();
             SelectRole = new ComboBox();
             label35 = new Label();
-            GroupComboBox = new ComboBox();
             UpperPanel.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -118,6 +118,19 @@
             panel1.Size = new Size(645, 498);
             panel1.TabIndex = 3;
             // 
+            // GroupComboBox
+            // 
+            GroupComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            GroupComboBox.Enabled = false;
+            GroupComboBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            GroupComboBox.FormattingEnabled = true;
+            GroupComboBox.Items.AddRange(new object[] { "09-321", "09-322" });
+            GroupComboBox.Location = new Point(377, 317);
+            GroupComboBox.Name = "GroupComboBox";
+            GroupComboBox.Size = new Size(259, 36);
+            GroupComboBox.TabIndex = 52;
+            GroupComboBox.Visible = false;
+            // 
             // BtnEnter
             // 
             BtnEnter.BackColor = SystemColors.ControlLight;
@@ -129,7 +142,7 @@
             BtnEnter.Name = "BtnEnter";
             BtnEnter.Size = new Size(218, 59);
             BtnEnter.TabIndex = 51;
-            BtnEnter.Text = "Зарегестрировать";
+            BtnEnter.Text = "Зарегистрировать";
             BtnEnter.UseVisualStyleBackColor = false;
             BtnEnter.Click += BtnEnter_Click;
             // 
@@ -281,17 +294,6 @@
             label35.TabIndex = 37;
             label35.Text = "Кого создать";
             label35.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // GroupComboBox
-            // 
-            GroupComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            GroupComboBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            GroupComboBox.FormattingEnabled = true;
-            GroupComboBox.Items.AddRange(new object[] { "09-321", "09-322" });
-            GroupComboBox.Location = new Point(377, 317);
-            GroupComboBox.Name = "GroupComboBox";
-            GroupComboBox.Size = new Size(259, 36);
-            GroupComboBox.TabIndex = 52;
             // 
             // AddUserForm
             // 

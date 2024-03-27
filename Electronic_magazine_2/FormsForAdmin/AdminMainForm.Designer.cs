@@ -32,11 +32,11 @@
             BtnMinimaze = new Button();
             BtnClose = new Button();
             panel3 = new Panel();
-            label35 = new Label();
-            pictureBox1 = new PictureBox();
+            FullNameLabel = new Label();
+            PhotoPictureBox = new PictureBox();
             panel4 = new Panel();
             BtnProfile = new Button();
-            button2 = new Button();
+            BtnAddUser = new Button();
             tableLayoutPanel1 = new TableLayoutPanel();
             label1 = new Label();
             label2 = new Label();
@@ -88,7 +88,7 @@
             Groups = new TabPage();
             UpperPanel.SuspendLayout();
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PhotoPictureBox).BeginInit();
             panel4.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             schedulePanel.SuspendLayout();
@@ -100,7 +100,7 @@
             // 
             // UpperPanel
             // 
-            UpperPanel.BackColor = SystemColors.Control;
+            UpperPanel.BackColor = Color.White;
             UpperPanel.Controls.Add(BtnMinimaze);
             UpperPanel.Controls.Add(BtnClose);
             UpperPanel.Dock = DockStyle.Top;
@@ -112,7 +112,7 @@
             // 
             // BtnMinimaze
             // 
-            BtnMinimaze.BackColor = SystemColors.Control;
+            BtnMinimaze.BackColor = Color.White;
             BtnMinimaze.Cursor = Cursors.Hand;
             BtnMinimaze.Dock = DockStyle.Right;
             BtnMinimaze.FlatStyle = FlatStyle.Flat;
@@ -128,7 +128,7 @@
             // 
             // BtnClose
             // 
-            BtnClose.BackColor = SystemColors.Control;
+            BtnClose.BackColor = Color.White;
             BtnClose.Cursor = Cursors.Hand;
             BtnClose.Dock = DockStyle.Right;
             BtnClose.FlatStyle = FlatStyle.Flat;
@@ -144,39 +144,42 @@
             // 
             // panel3
             // 
-            panel3.BackColor = SystemColors.Control;
-            panel3.Controls.Add(label35);
-            panel3.Controls.Add(pictureBox1);
+            panel3.BackColor = Color.White;
+            panel3.Controls.Add(FullNameLabel);
+            panel3.Controls.Add(PhotoPictureBox);
             panel3.Location = new Point(0, 49);
             panel3.Margin = new Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
             panel3.Size = new Size(227, 260);
             panel3.TabIndex = 2;
             // 
-            // label35
+            // FullNameLabel
             // 
-            label35.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label35.Location = new Point(0, 158);
-            label35.Name = "label35";
-            label35.Size = new Size(227, 102);
-            label35.TabIndex = 36;
-            label35.Text = "ФИО\r\n";
-            label35.TextAlign = ContentAlignment.MiddleCenter;
+            FullNameLabel.BackColor = Color.White;
+            FullNameLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            FullNameLabel.Location = new Point(0, 168);
+            FullNameLabel.Name = "FullNameLabel";
+            FullNameLabel.Size = new Size(227, 92);
+            FullNameLabel.TabIndex = 36;
+            FullNameLabel.Text = "ФИО\r\n";
+            FullNameLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
+            // PhotoPictureBox
             // 
-            pictureBox1.Location = new Point(41, 29);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(135, 135);
-            pictureBox1.TabIndex = 35;
-            pictureBox1.TabStop = false;
+            PhotoPictureBox.BackColor = Color.White;
+            PhotoPictureBox.Location = new Point(48, 29);
+            PhotoPictureBox.Margin = new Padding(3, 4, 3, 4);
+            PhotoPictureBox.Name = "PhotoPictureBox";
+            PhotoPictureBox.Size = new Size(135, 135);
+            PhotoPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            PhotoPictureBox.TabIndex = 35;
+            PhotoPictureBox.TabStop = false;
             // 
             // panel4
             // 
-            panel4.BackColor = SystemColors.Control;
+            panel4.BackColor = Color.White;
             panel4.Controls.Add(BtnProfile);
-            panel4.Controls.Add(button2);
+            panel4.Controls.Add(BtnAddUser);
             panel4.Location = new Point(0, 316);
             panel4.Margin = new Padding(3, 4, 3, 4);
             panel4.Name = "panel4";
@@ -185,7 +188,7 @@
             // 
             // BtnProfile
             // 
-            BtnProfile.BackColor = Color.White;
+            BtnProfile.BackColor = SystemColors.Control;
             BtnProfile.FlatStyle = FlatStyle.Popup;
             BtnProfile.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
             BtnProfile.Location = new Point(37, 46);
@@ -195,24 +198,25 @@
             BtnProfile.TabIndex = 4;
             BtnProfile.Text = "Профиль";
             BtnProfile.UseVisualStyleBackColor = false;
+            BtnProfile.Click += BtnProfile_Click;
             // 
-            // button2
+            // BtnAddUser
             // 
-            button2.BackColor = Color.White;
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button2.Location = new Point(37, 126);
-            button2.Margin = new Padding(3, 4, 3, 4);
-            button2.Name = "button2";
-            button2.Size = new Size(164, 60);
-            button2.TabIndex = 3;
-            button2.Text = "Создать пользователя";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            BtnAddUser.BackColor = SystemColors.Control;
+            BtnAddUser.FlatStyle = FlatStyle.Popup;
+            BtnAddUser.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            BtnAddUser.Location = new Point(37, 126);
+            BtnAddUser.Margin = new Padding(3, 4, 3, 4);
+            BtnAddUser.Name = "BtnAddUser";
+            BtnAddUser.Size = new Size(164, 60);
+            BtnAddUser.TabIndex = 3;
+            BtnAddUser.Text = "Создать пользователя";
+            BtnAddUser.UseVisualStyleBackColor = false;
+            BtnAddUser.Click += BtnAddUser_Click;
             // 
             // tableLayoutPanel1
             // 
-            tableLayoutPanel1.BackColor = SystemColors.Control;
+            tableLayoutPanel1.BackColor = Color.White;
             tableLayoutPanel1.ColumnCount = 7;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 11.8665F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.56366F));
@@ -282,7 +286,7 @@
             // 
             // label2
             // 
-            label2.BackColor = SystemColors.Control;
+            label2.BackColor = Color.White;
             label2.BorderStyle = BorderStyle.FixedSingle;
             label2.Dock = DockStyle.Fill;
             label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
@@ -655,7 +659,7 @@
             // 
             // schedulePanel
             // 
-            schedulePanel.BackColor = SystemColors.Control;
+            schedulePanel.BackColor = Color.White;
             schedulePanel.Controls.Add(btnSave);
             schedulePanel.Controls.Add(btnClearTable);
             schedulePanel.Controls.Add(SelectGroup);
@@ -834,9 +838,10 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "AdminMainForm";
             Text = "Form1";
+            Load += AdminMainForm_Load;
             UpperPanel.ResumeLayout(false);
             panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PhotoPictureBox).EndInit();
             panel4.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
             schedulePanel.ResumeLayout(false);
@@ -854,11 +859,11 @@
         private System.Windows.Forms.Button BtnMinimaze;
         private System.Windows.Forms.Button BtnClose;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label FullNameLabel;
+        private System.Windows.Forms.PictureBox PhotoPictureBox;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button BtnProfile;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnAddUser;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;

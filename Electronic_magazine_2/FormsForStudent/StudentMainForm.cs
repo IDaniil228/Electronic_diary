@@ -1,17 +1,7 @@
 ﻿using Electronic_diary.Classes;
-using Electronic_diary.Classes.Entities;
-using Electronic_diary.Classes.weekday;
 using Electronic_diary.FormsForStudent;
 using Electronic_magazine.Forms;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Electronic_magazine
 {
@@ -31,15 +21,22 @@ namespace Electronic_magazine
         {
             WindowState = FormWindowState.Minimized;
         }
+        /// <summary>
+        /// Заполнение формы при открывании
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void StudentMainForm_Load(object sender, EventArgs e)
         {
             using (var context = new DiaryContext())
             {
                 FullNameLable.Text = CurrentData.CurrentStudent.Surname + " " + CurrentData.CurrentStudent.Name + " " + CurrentData.CurrentStudent.Patronymic;
                 #region Фото
-                var imageMemoryStream = new MemoryStream(CurrentData.CurrentStudent.Photo);
-                StudentPhotoPictureBox.Image = Image.FromStream(imageMemoryStream);
-
+                if (CurrentData.CurrentStudent.Photo != null)
+                {
+                    var imageMemoryStream = new MemoryStream(CurrentData.CurrentStudent.Photo);
+                    StudentPhotoPictureBox.Image = Image.FromStream(imageMemoryStream);
+                }
                 #endregion
                 var subject = context.Subjects;
                 #region Понедельник
@@ -258,16 +255,26 @@ namespace Electronic_magazine
 
             }
         }
-
+        /// <summary>
+        /// Открытие формы с профилем студента
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnProfile_Click(object sender, EventArgs e)
         {
             StudentProfileForm studentProfileForm = new StudentProfileForm();
             studentProfileForm.ShowDialog();
-            var imageMemoryStream = new MemoryStream(CurrentData.CurrentStudent.Photo);
-            StudentPhotoPictureBox.Image = Image.FromStream(imageMemoryStream);
-
+            if (CurrentData.CurrentStudent.Photo != null)
+            {
+                var imageMemoryStream = new MemoryStream(CurrentData.CurrentStudent.Photo);
+                StudentPhotoPictureBox.Image = Image.FromStream(imageMemoryStream);
+            }
         }
-
+        /// <summary>
+        /// Обработка нажатия на ячейку в таблице
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Lable_Click(object sender, EventArgs e)
         {
             using (var context = new DiaryContext())
@@ -282,7 +289,11 @@ namespace Electronic_magazine
             CardOfSubjectForm card = new CardOfSubjectForm();
             card.ShowDialog();
         }
-
+        /// <summary>
+        /// Открытие формы с оценка студента
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Evaluations_Click(object sender, EventArgs e)
         {
             EvaluationsForm evaluationsForm = new EvaluationsForm();

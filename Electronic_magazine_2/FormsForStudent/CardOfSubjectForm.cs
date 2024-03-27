@@ -1,13 +1,5 @@
 ﻿using Electronic_diary.Classes;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Electronic_magazine
 {
@@ -17,26 +9,29 @@ namespace Electronic_magazine
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Сохранение заметок в БД
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnEnter_Click(object sender, EventArgs e)
         {
             using (var context = new DiaryContext())
             {
                 var note = context.Notes.Where(n => n.StudentId == CurrentData.CurrentStudent.StudentId).Single();
-                CurrentData.CurrentSubject.Description = NotesRichTextBox.Text;
                 switch (CurrentData.CurrentSubject.Title)
                 {
                     case "Мат.анализ":
-                        note.Matanalysis = CurrentData.CurrentSubject.Description;
+                        note.Matanalysis = NotesRichTextBox.Text;
                         break;
                     case "Алгебра и геометрия":
-                        note.AlgebraAndGeometry = CurrentData.CurrentSubject.Description;
+                        note.AlgebraAndGeometry = NotesRichTextBox.Text;
                         break;
                     case "Физическая культура":
-                        note.Physical = CurrentData.CurrentSubject.Description;
+                        note.Physical = NotesRichTextBox.Text;
                         break;
                     case "Анлг. яз":
-                        note.English = CurrentData.CurrentSubject.Description;
+                        note.English = NotesRichTextBox.Text;
                         break;
                 }
                 context.SaveChanges();
@@ -44,7 +39,11 @@ namespace Electronic_magazine
             CurrentData.CurrentSubject = null;
             Close();
         }
-
+        /// <summary>
+        /// Заполнение формы при открытии 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CardOfSubjectForm_Load(object sender, EventArgs e)
         {
             SubjectTitleLable.Text = CurrentData.CurrentSubject.Title;

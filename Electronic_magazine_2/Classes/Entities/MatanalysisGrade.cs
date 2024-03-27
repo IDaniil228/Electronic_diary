@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Electronic_diary.Classes.Entities;
+﻿namespace Electronic_diary.Classes.Entities;
 
 public partial class MatanalysisGrade
 {

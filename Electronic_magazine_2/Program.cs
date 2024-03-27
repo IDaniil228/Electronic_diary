@@ -1,5 +1,4 @@
 using Electronic_magazine;
-using Electronic_magazine.Forms;
 
 namespace Electronic_magazine_2
 {

@@ -137,7 +137,7 @@
             EmailTextBox.Cursor = Cursors.Hand;
             EmailTextBox.Enabled = false;
             EmailTextBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            EmailTextBox.Location = new Point(107, 475);
+            EmailTextBox.Location = new Point(147, 473);
             EmailTextBox.Margin = new Padding(3, 4, 3, 4);
             EmailTextBox.Multiline = true;
             EmailTextBox.Name = "EmailTextBox";
@@ -151,7 +151,7 @@
             PhoneTextBox.Cursor = Cursors.Hand;
             PhoneTextBox.Enabled = false;
             PhoneTextBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            PhoneTextBox.Location = new Point(147, 429);
+            PhoneTextBox.Location = new Point(187, 427);
             PhoneTextBox.Margin = new Padding(3, 4, 3, 4);
             PhoneTextBox.Multiline = true;
             PhoneTextBox.Name = "PhoneTextBox";
@@ -177,7 +177,7 @@
             GroupLabel.AutoSize = true;
             GroupLabel.BackColor = Color.White;
             GroupLabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            GroupLabel.Location = new Point(32, 384);
+            GroupLabel.Location = new Point(72, 382);
             GroupLabel.Name = "GroupLabel";
             GroupLabel.Size = new Size(96, 25);
             GroupLabel.TabIndex = 25;
@@ -188,7 +188,7 @@
             EmailLabel.AutoSize = true;
             EmailLabel.BackColor = Color.White;
             EmailLabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            EmailLabel.Location = new Point(32, 475);
+            EmailLabel.Location = new Point(72, 473);
             EmailLabel.Name = "EmailLabel";
             EmailLabel.Size = new Size(85, 25);
             EmailLabel.TabIndex = 24;
@@ -199,7 +199,7 @@
             PhoneLabel.AutoSize = true;
             PhoneLabel.BackColor = Color.White;
             PhoneLabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            PhoneLabel.Location = new Point(32, 428);
+            PhoneLabel.Location = new Point(72, 426);
             PhoneLabel.Name = "PhoneLabel";
             PhoneLabel.Size = new Size(126, 25);
             PhoneLabel.TabIndex = 23;
