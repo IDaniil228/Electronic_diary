@@ -73,7 +73,6 @@
             panel4 = new Panel();
             Evaluations = new Button();
             BtnProfile = new Button();
-            button2 = new Button();
             UpperPanel.SuspendLayout();
             panel2.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
@@ -672,7 +671,6 @@
             panel4.BackColor = Color.White;
             panel4.Controls.Add(Evaluations);
             panel4.Controls.Add(BtnProfile);
-            panel4.Controls.Add(button2);
             panel4.Location = new Point(0, 316);
             panel4.Margin = new Padding(3, 4, 3, 4);
             panel4.Name = "panel4";
@@ -704,18 +702,6 @@
             BtnProfile.Text = "Профиль";
             BtnProfile.UseVisualStyleBackColor = false;
             BtnProfile.Click += BtnProfile_Click;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.White;
-            button2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button2.Location = new Point(37, 219);
-            button2.Margin = new Padding(3, 4, 3, 4);
-            button2.Name = "button2";
-            button2.Size = new Size(164, 45);
-            button2.TabIndex = 3;
-            button2.Text = "Уведомления";
-            button2.UseVisualStyleBackColor = false;
             // 
             // StudentMainForm
             // 
@@ -751,7 +737,6 @@
         private System.Windows.Forms.PictureBox StudentPhotoPictureBox;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button BtnClose;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button BtnMinimaze;
         private System.Windows.Forms.Button Evaluations;
         private System.Windows.Forms.Button BtnProfile;

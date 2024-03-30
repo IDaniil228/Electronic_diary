@@ -65,9 +65,9 @@
             DescriptionLabel.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             DescriptionLabel.Location = new Point(12, 102);
             DescriptionLabel.Name = "DescriptionLabel";
-            DescriptionLabel.Size = new Size(383, 91);
+            DescriptionLabel.Size = new Size(383, 76);
             DescriptionLabel.TabIndex = 13;
-            DescriptionLabel.Text = "Дата";
+            DescriptionLabel.Text = "Описание";
             DescriptionLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // NotesRichTextBox

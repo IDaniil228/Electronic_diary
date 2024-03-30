@@ -138,5 +138,11 @@ namespace Electronic_magazine.FormsForAdmin
                 MessageBox.Show("Группа сохранена", "Успешно");
             }
         }
+
+        private void BtnAddEvaluation_Click(object sender, EventArgs e)
+        {
+            AddEvaluation addEvaluation = new AddEvaluation();
+            addEvaluation.ShowDialog();
+        }
     }
 }

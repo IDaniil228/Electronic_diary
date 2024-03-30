@@ -35,6 +35,7 @@
             FullNameLabel = new Label();
             PhotoPictureBox = new PictureBox();
             panel4 = new Panel();
+            BtnAddEvaluation = new Button();
             BtnProfile = new Button();
             BtnAddUser = new Button();
             tableLayoutPanel1 = new TableLayoutPanel();
@@ -178,6 +179,7 @@
             // panel4
             // 
             panel4.BackColor = Color.White;
+            panel4.Controls.Add(BtnAddEvaluation);
             panel4.Controls.Add(BtnProfile);
             panel4.Controls.Add(BtnAddUser);
             panel4.Location = new Point(0, 316);
@@ -185,6 +187,20 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(227, 484);
             panel4.TabIndex = 3;
+            // 
+            // BtnAddEvaluation
+            // 
+            BtnAddEvaluation.BackColor = SystemColors.Control;
+            BtnAddEvaluation.FlatStyle = FlatStyle.Popup;
+            BtnAddEvaluation.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            BtnAddEvaluation.Location = new Point(37, 133);
+            BtnAddEvaluation.Margin = new Padding(3, 4, 3, 4);
+            BtnAddEvaluation.Name = "BtnAddEvaluation";
+            BtnAddEvaluation.Size = new Size(164, 60);
+            BtnAddEvaluation.TabIndex = 5;
+            BtnAddEvaluation.Text = "Выставить оценки ";
+            BtnAddEvaluation.UseVisualStyleBackColor = false;
+            BtnAddEvaluation.Click += BtnAddEvaluation_Click;
             // 
             // BtnProfile
             // 
@@ -205,7 +221,7 @@
             BtnAddUser.BackColor = SystemColors.Control;
             BtnAddUser.FlatStyle = FlatStyle.Popup;
             BtnAddUser.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            BtnAddUser.Location = new Point(37, 126);
+            BtnAddUser.Location = new Point(37, 215);
             BtnAddUser.Margin = new Padding(3, 4, 3, 4);
             BtnAddUser.Name = "BtnAddUser";
             BtnAddUser.Size = new Size(164, 60);
@@ -915,5 +931,6 @@
         private System.Windows.Forms.Button BtnAdd;
         private System.Windows.Forms.TextBox AddStudentIdTextBox;
         private Label label35;
+        private Button BtnAddEvaluation;
     }
 }

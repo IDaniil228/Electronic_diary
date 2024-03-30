@@ -36,9 +36,9 @@ namespace Electronic_magazine
                     var students = context.Students.Include(s => s.NumberGroupNavigation);
                     foreach (var student in students)
                     {
-                        if (LoginTextBox.Text == student.Login)
+                        if (LoginTextBox.Text.Trim() == student.Login)
                         {
-                            if (PasswordTextBox.Text == student.Password)
+                            if (PasswordTextBox.Text.Trim() == student.Password)
                             {
                                 CurrentData.CurrentStudent = student;
                                 StudentMainForm studentMainForm = new StudentMainForm();
@@ -57,16 +57,16 @@ namespace Electronic_magazine
                     return;
                 }
             }
-            if (SelectRole.Text == "Администратор")
+            if (SelectRole.Text.Trim() == "Администратор")
             {
                 using (var context = new DiaryContext())
                 {
                     var admins = context.Admins;
                     foreach (var admin in admins)
                     {
-                        if (LoginTextBox.Text == admin.Login)
+                        if (LoginTextBox.Text.Trim() == admin.Login)
                         {
-                            if (PasswordTextBox.Text == admin.Password)
+                            if (PasswordTextBox.Text.Trim() == admin.Password)
                             {
                                 CurrentData.CurrentAdmin = admin;
                                 AdminMainForm adminMainForm = new AdminMainForm();

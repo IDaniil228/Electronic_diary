@@ -18,7 +18,8 @@ namespace Electronic_magazine
         {
             using (var context = new DiaryContext())
             {
-                var note = context.Notes.Where(n => n.StudentId == CurrentData.CurrentStudent.StudentId).Single();
+                var note = context.Notes.Where(n => n.StudentId ==
+                CurrentData.CurrentStudent.StudentId).Single();
                 switch (CurrentData.CurrentSubject.Title)
                 {
                     case "Мат.анализ":
