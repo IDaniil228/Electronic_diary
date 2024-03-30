@@ -61,7 +61,7 @@
             Test_2_Label = new Label();
             Test_1_Label = new Label();
             MathTest_1_ComboBox = new ComboBox();
-            BtnEnter = new Button();
+            BtnSave = new Button();
             UpperPanel = new Panel();
             BtnMinimaze = new Button();
             BtnClose = new Button();
@@ -81,7 +81,7 @@
             panel1.Controls.Add(label1);
             panel1.Controls.Add(SubjectTitleLable);
             panel1.Controls.Add(tableLayoutPanel1);
-            panel1.Controls.Add(BtnEnter);
+            panel1.Controls.Add(BtnSave);
             panel1.Location = new Point(0, 48);
             panel1.Name = "panel1";
             panel1.Size = new Size(598, 504);
@@ -466,20 +466,20 @@
             MathTest_1_ComboBox.Size = new Size(79, 28);
             MathTest_1_ComboBox.TabIndex = 2;
             // 
-            // BtnEnter
+            // BtnSave
             // 
-            BtnEnter.BackColor = SystemColors.Control;
-            BtnEnter.Cursor = Cursors.Hand;
-            BtnEnter.FlatStyle = FlatStyle.Flat;
-            BtnEnter.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            BtnEnter.Location = new Point(236, 428);
-            BtnEnter.Margin = new Padding(3, 4, 3, 4);
-            BtnEnter.Name = "BtnEnter";
-            BtnEnter.Size = new Size(136, 59);
-            BtnEnter.TabIndex = 16;
-            BtnEnter.Text = " Сохранить";
-            BtnEnter.UseVisualStyleBackColor = false;
-            BtnEnter.Click += BtnEnter_Click;
+            BtnSave.BackColor = SystemColors.Control;
+            BtnSave.Cursor = Cursors.Hand;
+            BtnSave.FlatStyle = FlatStyle.Flat;
+            BtnSave.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            BtnSave.Location = new Point(236, 428);
+            BtnSave.Margin = new Padding(3, 4, 3, 4);
+            BtnSave.Name = "BtnSave";
+            BtnSave.Size = new Size(136, 59);
+            BtnSave.TabIndex = 16;
+            BtnSave.Text = " Сохранить";
+            BtnSave.UseVisualStyleBackColor = false;
+            BtnSave.Click += BtnSave_Click;
             // 
             // UpperPanel
             // 
@@ -561,7 +561,7 @@
         private Label Exam_1_Label;
         private Label Test_2_Label;
         private Label Test_1_Label;
-        private Button BtnEnter;
+        private Button BtnSave;
         private ComboBox StudentComboBox;
         private ComboBox GroupComboBox;
         private Label StudenytLabel;
