@@ -535,6 +535,7 @@
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "AddEvaluation";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "AddEvaluation";
             panel1.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);

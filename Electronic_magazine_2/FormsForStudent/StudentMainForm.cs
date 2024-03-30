@@ -300,5 +300,12 @@ namespace Electronic_magazine
             EvaluationsForm evaluationsForm = new EvaluationsForm();
             evaluationsForm.ShowDialog();
         }
+
+        private void BtnExitFromAcount_Click(object sender, EventArgs e)
+        {
+            AuthorizationForm authorizationForm = new AuthorizationForm();
+            Close();
+            authorizationForm.Show();
+        }
     }
 }

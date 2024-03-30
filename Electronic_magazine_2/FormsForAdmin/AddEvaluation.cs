@@ -117,36 +117,37 @@ namespace Electronic_diary.FormsForAdmin
                         matanalysisGrade.Test2 = Convert.ToInt32(MathTest_2_ComboBox.SelectedItem);
                         matanalysisGrade.Exam1 = Convert.ToInt32(MathExam_1_ComboBox.SelectedItem);
                         matanalysisGrade.Exam2 = Convert.ToInt32(MathExam_2_ComboBox.SelectedItem);
-                        context.SaveChanges();
-                        MessageBox.Show("Сохранение прошло успешно!");
+
                     }
-                    //var englishGrades = context.EnglishGrades.Where(s => s.StudentId
-                    //== student.StudentId).FirstOrDefault();
-                    //if (englishGrades != null)
-                    //{
-                    //    EnglishTest_1_ComboBox.Text = englishGrades.Test1.ToString();
-                    //    EnglishTest_2_ComboBox.Text = englishGrades.Test2.ToString();
-                    //    EnglishExam_1_ComboBox.Text = englishGrades.Exam1.ToString();
-                    //    EnglishExam_2_ComboBox.Text = englishGrades.Exam2.ToString();
-                    //}
-                    //var pegrade = context.Pegrades.Where(s => s.StudentId
-                    //== student.StudentId).FirstOrDefault();
-                    //if (pegrade != null)
-                    //{
-                    //    PETest_1_ComboBox.Text = pegrade.Test1.ToString();
-                    //    PETest_2_ComboBox.Text = pegrade.Test2.ToString();
-                    //    PEExam_1_ComboBox.Text = pegrade.Exam1.ToString();
-                    //    PEExam_2_ComboBox.Text = pegrade.Exam2.ToString();
-                    //}
-                    //var algemGrade = context.AlgemGrades.Where(s => s.StudentId
-                    //== student.StudentId).FirstOrDefault();
-                    //if (algemGrade != null)
-                    //{
-                    //    AlgemTest_1_ComboBox.Text = algemGrade.Test1.ToString();
-                    //    AlgemTest_2_ComboBox.Text = algemGrade.Test2.ToString();
-                    //    AlgemExam_1_ComboBox.Text = algemGrade.Exam1.ToString();
-                    //    AlgemExam_2_ComboBox.Text = algemGrade.Exam2.ToString();
-                    //}
+                    var englishGrades = context.EnglishGrades.Where(s => s.StudentId
+                    == student.StudentId).FirstOrDefault();
+                    if (englishGrades != null)
+                    {
+                        englishGrades.Test1 = Convert.ToInt32(EnglishTest_1_ComboBox.SelectedItem);
+                        englishGrades.Test2 = Convert.ToInt32(EnglishTest_2_ComboBox.SelectedItem);
+                        englishGrades.Exam1 = Convert.ToInt32(EnglishExam_1_ComboBox.SelectedItem);
+                        englishGrades.Exam2 = Convert.ToInt32(EnglishExam_2_ComboBox.SelectedItem);
+                    }
+                    var pegrade = context.Pegrades.Where(s => s.StudentId
+                    == student.StudentId).FirstOrDefault();
+                    if (pegrade != null)
+                    {
+                        pegrade.Test1 = Convert.ToInt32(PETest_1_ComboBox.SelectedItem);
+                        pegrade.Test2 = Convert.ToInt32(PETest_2_ComboBox.SelectedItem);
+                        pegrade.Exam1 = Convert.ToInt32(PEExam_1_ComboBox.SelectedItem);
+                        pegrade.Exam2 = Convert.ToInt32(PEExam_2_ComboBox.SelectedItem);
+                    }
+                    var algemGrade = context.AlgemGrades.Where(s => s.StudentId
+                    == student.StudentId).FirstOrDefault();
+                    if (algemGrade != null)
+                    {
+                        algemGrade.Test1 = Convert.ToInt32(AlgemTest_1_ComboBox.SelectedItem);
+                        algemGrade.Test2 = Convert.ToInt32(AlgemTest_2_ComboBox.SelectedItem);
+                        algemGrade.Exam1 = Convert.ToInt32(AlgemExam_1_ComboBox.SelectedItem);
+                        algemGrade.Exam2 = Convert.ToInt32(AlgemExam_2_ComboBox.SelectedItem);
+                    }
+                    context.SaveChanges();
+                    MessageBox.Show("Сохранение прошло успешно!");
                 }
             }
         }

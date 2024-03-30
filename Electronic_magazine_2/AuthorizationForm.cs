@@ -15,6 +15,7 @@ namespace Electronic_magazine
         private void BtnClose_Click(object sender, EventArgs e)
         {
             Close();
+            Application.Exit();
         }
 
         private void BtnMinimaze_Click(object sender, EventArgs e)
@@ -84,6 +85,18 @@ namespace Electronic_magazine
                     MessageBox.Show("Неверный логин", "Ошибка входа");
                     return;
                 }
+            }
+        }
+
+        private void ShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ShowPassword.Checked)
+            {
+                PasswordTextBox.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                PasswordTextBox.UseSystemPasswordChar = true;
             }
         }
     }

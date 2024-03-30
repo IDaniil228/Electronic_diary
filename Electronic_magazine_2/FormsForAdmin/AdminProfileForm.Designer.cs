@@ -118,10 +118,10 @@
             // 
             BtnEdit.BackColor = Color.White;
             BtnEdit.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            BtnEdit.Location = new Point(186, 561);
+            BtnEdit.Location = new Point(175, 561);
             BtnEdit.Margin = new Padding(3, 4, 3, 4);
             BtnEdit.Name = "BtnEdit";
-            BtnEdit.Size = new Size(164, 45);
+            BtnEdit.Size = new Size(175, 45);
             BtnEdit.TabIndex = 34;
             BtnEdit.Text = "Редактировать";
             BtnEdit.UseVisualStyleBackColor = false;

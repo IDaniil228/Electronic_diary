@@ -35,47 +35,48 @@
             FullNameLabel = new Label();
             PhotoPictureBox = new PictureBox();
             panel4 = new Panel();
+            BtnExitFromAcount = new Button();
             BtnAddEvaluation = new Button();
             BtnProfile = new Button();
             BtnAddUser = new Button();
             tableLayoutPanel1 = new TableLayoutPanel();
+            SaturdayLesson_4_ComboBox = new ComboBox();
+            FridayLesson_4_ComboBox = new ComboBox();
+            ThursdayLesson_4_ComboBox = new ComboBox();
+            WednesdayLesson_4_ComboBox = new ComboBox();
+            TuesdayLesson_4_ComboBox = new ComboBox();
+            MondayLesson_4_СomboBox = new ComboBox();
+            SaturdayLesson_3_ComboBox = new ComboBox();
+            FridayLesson_3_ComboBox = new ComboBox();
+            ThursdayLesson_3_ComboBox = new ComboBox();
+            WednesdayLesson_3_ComboBox = new ComboBox();
+            TuesdayLesson_3_ComboBox = new ComboBox();
+            MondayLesson_3_СomboBox = new ComboBox();
+            SaturdayLesson_2_ComboBox = new ComboBox();
+            FridayLesson_2_ComboBox = new ComboBox();
+            ThursdayLesson_2_ComboBox = new ComboBox();
+            WednesdayLesson_2_ComboBox = new ComboBox();
+            TuesdayLesson_2_ComboBox = new ComboBox();
+            MondayLesson_2_СomboBox = new ComboBox();
+            SaturdayLesson_1_ComboBox = new ComboBox();
+            FridayLesson_1_ComboBox = new ComboBox();
+            ThursdayLesson_1_ComboBox = new ComboBox();
+            WednesdayLesson_1_ComboBox = new ComboBox();
+            TuesdayLesson_1_ComboBox = new ComboBox();
+            MondayLesson_1_СomboBox = new ComboBox();
             label1 = new Label();
-            label2 = new Label();
             label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
             label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            label11 = new Label();
-            label12 = new Label();
             label13 = new Label();
-            label14 = new Label();
             label15 = new Label();
             label16 = new Label();
-            label17 = new Label();
-            label18 = new Label();
-            label19 = new Label();
-            label20 = new Label();
-            label21 = new Label();
-            label22 = new Label();
-            label23 = new Label();
-            label24 = new Label();
-            label25 = new Label();
-            label26 = new Label();
-            label27 = new Label();
-            label28 = new Label();
-            label29 = new Label();
-            label30 = new Label();
             label31 = new Label();
             label32 = new Label();
             label33 = new Label();
             label34 = new Label();
             schedulePanel = new Panel();
             btnSave = new Button();
-            btnClearTable = new Button();
+            BtnClearTable = new Button();
             SelectGroup = new ComboBox();
             ChengeGroupsPanel = new Panel();
             label35 = new Label();
@@ -179,6 +180,7 @@
             // panel4
             // 
             panel4.BackColor = Color.White;
+            panel4.Controls.Add(BtnExitFromAcount);
             panel4.Controls.Add(BtnAddEvaluation);
             panel4.Controls.Add(BtnProfile);
             panel4.Controls.Add(BtnAddUser);
@@ -188,12 +190,24 @@
             panel4.Size = new Size(227, 484);
             panel4.TabIndex = 3;
             // 
+            // BtnExitFromAcount
+            // 
+            BtnExitFromAcount.BackColor = Color.White;
+            BtnExitFromAcount.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            BtnExitFromAcount.Location = new Point(37, 302);
+            BtnExitFromAcount.Margin = new Padding(3, 4, 3, 4);
+            BtnExitFromAcount.Name = "BtnExitFromAcount";
+            BtnExitFromAcount.Size = new Size(164, 60);
+            BtnExitFromAcount.TabIndex = 6;
+            BtnExitFromAcount.Text = "Выйти из аккаунта";
+            BtnExitFromAcount.UseVisualStyleBackColor = false;
+            BtnExitFromAcount.Click += BtnExitFromAcount_Click;
+            // 
             // BtnAddEvaluation
             // 
-            BtnAddEvaluation.BackColor = SystemColors.Control;
-            BtnAddEvaluation.FlatStyle = FlatStyle.Popup;
+            BtnAddEvaluation.BackColor = Color.White;
             BtnAddEvaluation.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            BtnAddEvaluation.Location = new Point(37, 133);
+            BtnAddEvaluation.Location = new Point(37, 142);
             BtnAddEvaluation.Margin = new Padding(3, 4, 3, 4);
             BtnAddEvaluation.Name = "BtnAddEvaluation";
             BtnAddEvaluation.Size = new Size(164, 60);
@@ -204,10 +218,9 @@
             // 
             // BtnProfile
             // 
-            BtnProfile.BackColor = SystemColors.Control;
-            BtnProfile.FlatStyle = FlatStyle.Popup;
+            BtnProfile.BackColor = Color.White;
             BtnProfile.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            BtnProfile.Location = new Point(37, 46);
+            BtnProfile.Location = new Point(37, 61);
             BtnProfile.Margin = new Padding(3, 4, 3, 4);
             BtnProfile.Name = "BtnProfile";
             BtnProfile.Size = new Size(164, 60);
@@ -218,10 +231,9 @@
             // 
             // BtnAddUser
             // 
-            BtnAddUser.BackColor = SystemColors.Control;
-            BtnAddUser.FlatStyle = FlatStyle.Popup;
+            BtnAddUser.BackColor = Color.White;
             BtnAddUser.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            BtnAddUser.Location = new Point(37, 215);
+            BtnAddUser.Location = new Point(37, 221);
             BtnAddUser.Margin = new Padding(3, 4, 3, 4);
             BtnAddUser.Name = "BtnAddUser";
             BtnAddUser.Size = new Size(164, 60);
@@ -233,44 +245,45 @@
             // tableLayoutPanel1
             // 
             tableLayoutPanel1.BackColor = Color.White;
+            tableLayoutPanel1.CellBorderStyle = TableLayoutPanelCellBorderStyle.InsetDouble;
             tableLayoutPanel1.ColumnCount = 7;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 11.8665F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.56366F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.28571F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.28571F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.28571F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.28571F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.28571F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857141F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857141F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857141F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857141F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857141F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857141F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857141F));
+            tableLayoutPanel1.Controls.Add(SaturdayLesson_4_ComboBox, 6, 4);
+            tableLayoutPanel1.Controls.Add(FridayLesson_4_ComboBox, 5, 4);
+            tableLayoutPanel1.Controls.Add(ThursdayLesson_4_ComboBox, 4, 4);
+            tableLayoutPanel1.Controls.Add(WednesdayLesson_4_ComboBox, 3, 4);
+            tableLayoutPanel1.Controls.Add(TuesdayLesson_4_ComboBox, 2, 4);
+            tableLayoutPanel1.Controls.Add(MondayLesson_4_СomboBox, 1, 4);
+            tableLayoutPanel1.Controls.Add(SaturdayLesson_3_ComboBox, 6, 3);
+            tableLayoutPanel1.Controls.Add(FridayLesson_3_ComboBox, 5, 3);
+            tableLayoutPanel1.Controls.Add(ThursdayLesson_3_ComboBox, 4, 3);
+            tableLayoutPanel1.Controls.Add(WednesdayLesson_3_ComboBox, 3, 3);
+            tableLayoutPanel1.Controls.Add(TuesdayLesson_3_ComboBox, 2, 3);
+            tableLayoutPanel1.Controls.Add(MondayLesson_3_СomboBox, 1, 3);
+            tableLayoutPanel1.Controls.Add(SaturdayLesson_2_ComboBox, 6, 2);
+            tableLayoutPanel1.Controls.Add(FridayLesson_2_ComboBox, 5, 2);
+            tableLayoutPanel1.Controls.Add(ThursdayLesson_2_ComboBox, 4, 2);
+            tableLayoutPanel1.Controls.Add(WednesdayLesson_2_ComboBox, 3, 2);
+            tableLayoutPanel1.Controls.Add(TuesdayLesson_2_ComboBox, 2, 2);
+            tableLayoutPanel1.Controls.Add(MondayLesson_2_СomboBox, 1, 2);
+            tableLayoutPanel1.Controls.Add(SaturdayLesson_1_ComboBox, 6, 1);
+            tableLayoutPanel1.Controls.Add(FridayLesson_1_ComboBox, 5, 1);
+            tableLayoutPanel1.Controls.Add(ThursdayLesson_1_ComboBox, 4, 1);
+            tableLayoutPanel1.Controls.Add(WednesdayLesson_1_ComboBox, 3, 1);
+            tableLayoutPanel1.Controls.Add(TuesdayLesson_1_ComboBox, 2, 1);
+            tableLayoutPanel1.Controls.Add(MondayLesson_1_СomboBox, 1, 1);
             tableLayoutPanel1.Controls.Add(label1, 1, 0);
-            tableLayoutPanel1.Controls.Add(label2, 1, 1);
             tableLayoutPanel1.Controls.Add(label3, 2, 0);
-            tableLayoutPanel1.Controls.Add(label4, 2, 1);
-            tableLayoutPanel1.Controls.Add(label5, 1, 2);
             tableLayoutPanel1.Controls.Add(label6, 3, 0);
-            tableLayoutPanel1.Controls.Add(label7, 3, 1);
-            tableLayoutPanel1.Controls.Add(label8, 2, 2);
-            tableLayoutPanel1.Controls.Add(label9, 1, 3);
-            tableLayoutPanel1.Controls.Add(label10, 2, 3);
-            tableLayoutPanel1.Controls.Add(label11, 3, 3);
-            tableLayoutPanel1.Controls.Add(label12, 3, 2);
             tableLayoutPanel1.Controls.Add(label13, 4, 0);
-            tableLayoutPanel1.Controls.Add(label14, 4, 1);
             tableLayoutPanel1.Controls.Add(label15, 5, 0);
             tableLayoutPanel1.Controls.Add(label16, 6, 0);
-            tableLayoutPanel1.Controls.Add(label17, 5, 1);
-            tableLayoutPanel1.Controls.Add(label18, 6, 1);
-            tableLayoutPanel1.Controls.Add(label19, 4, 2);
-            tableLayoutPanel1.Controls.Add(label20, 5, 2);
-            tableLayoutPanel1.Controls.Add(label21, 6, 2);
-            tableLayoutPanel1.Controls.Add(label22, 4, 3);
-            tableLayoutPanel1.Controls.Add(label23, 5, 3);
-            tableLayoutPanel1.Controls.Add(label24, 6, 3);
-            tableLayoutPanel1.Controls.Add(label25, 2, 4);
-            tableLayoutPanel1.Controls.Add(label26, 1, 4);
-            tableLayoutPanel1.Controls.Add(label27, 3, 4);
-            tableLayoutPanel1.Controls.Add(label28, 4, 4);
-            tableLayoutPanel1.Controls.Add(label29, 5, 4);
-            tableLayoutPanel1.Controls.Add(label30, 6, 4);
             tableLayoutPanel1.Controls.Add(label31, 0, 1);
             tableLayoutPanel1.Controls.Add(label32, 0, 2);
             tableLayoutPanel1.Controls.Add(label33, 0, 3);
@@ -279,182 +292,286 @@
             tableLayoutPanel1.Margin = new Padding(3, 4, 3, 4);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 5;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 5.913979F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 21.14695F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 24.23979F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 24.23979F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 24.23979F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 25F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 5.927F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 21.193512F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 24.2931614F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 24.2931614F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 24.2931614F));
             tableLayoutPanel1.Size = new Size(879, 666);
             tableLayoutPanel1.TabIndex = 4;
+            // 
+            // SaturdayLesson_4_ComboBox
+            // 
+            SaturdayLesson_4_ComboBox.FormattingEnabled = true;
+            SaturdayLesson_4_ComboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            SaturdayLesson_4_ComboBox.Location = new Point(756, 507);
+            SaturdayLesson_4_ComboBox.Name = "SaturdayLesson_4_ComboBox";
+            SaturdayLesson_4_ComboBox.Size = new Size(117, 28);
+            SaturdayLesson_4_ComboBox.TabIndex = 57;
+            // 
+            // FridayLesson_4_ComboBox
+            // 
+            FridayLesson_4_ComboBox.FormattingEnabled = true;
+            FridayLesson_4_ComboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            FridayLesson_4_ComboBox.Location = new Point(631, 507);
+            FridayLesson_4_ComboBox.Name = "FridayLesson_4_ComboBox";
+            FridayLesson_4_ComboBox.Size = new Size(116, 28);
+            FridayLesson_4_ComboBox.TabIndex = 56;
+            // 
+            // ThursdayLesson_4_ComboBox
+            // 
+            ThursdayLesson_4_ComboBox.FormattingEnabled = true;
+            ThursdayLesson_4_ComboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            ThursdayLesson_4_ComboBox.Location = new Point(506, 507);
+            ThursdayLesson_4_ComboBox.Name = "ThursdayLesson_4_ComboBox";
+            ThursdayLesson_4_ComboBox.Size = new Size(116, 28);
+            ThursdayLesson_4_ComboBox.TabIndex = 55;
+            // 
+            // WednesdayLesson_4_ComboBox
+            // 
+            WednesdayLesson_4_ComboBox.FormattingEnabled = true;
+            WednesdayLesson_4_ComboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            WednesdayLesson_4_ComboBox.Location = new Point(381, 507);
+            WednesdayLesson_4_ComboBox.Name = "WednesdayLesson_4_ComboBox";
+            WednesdayLesson_4_ComboBox.Size = new Size(116, 28);
+            WednesdayLesson_4_ComboBox.TabIndex = 54;
+            // 
+            // TuesdayLesson_4_ComboBox
+            // 
+            TuesdayLesson_4_ComboBox.FormattingEnabled = true;
+            TuesdayLesson_4_ComboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            TuesdayLesson_4_ComboBox.Location = new Point(256, 507);
+            TuesdayLesson_4_ComboBox.Name = "TuesdayLesson_4_ComboBox";
+            TuesdayLesson_4_ComboBox.Size = new Size(116, 28);
+            TuesdayLesson_4_ComboBox.TabIndex = 53;
+            // 
+            // MondayLesson_4_СomboBox
+            // 
+            MondayLesson_4_СomboBox.FormattingEnabled = true;
+            MondayLesson_4_СomboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            MondayLesson_4_СomboBox.Location = new Point(131, 507);
+            MondayLesson_4_СomboBox.Name = "MondayLesson_4_СomboBox";
+            MondayLesson_4_СomboBox.Size = new Size(116, 28);
+            MondayLesson_4_СomboBox.TabIndex = 52;
+            // 
+            // SaturdayLesson_3_ComboBox
+            // 
+            SaturdayLesson_3_ComboBox.FormattingEnabled = true;
+            SaturdayLesson_3_ComboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            SaturdayLesson_3_ComboBox.Location = new Point(756, 347);
+            SaturdayLesson_3_ComboBox.Name = "SaturdayLesson_3_ComboBox";
+            SaturdayLesson_3_ComboBox.Size = new Size(117, 28);
+            SaturdayLesson_3_ComboBox.TabIndex = 51;
+            // 
+            // FridayLesson_3_ComboBox
+            // 
+            FridayLesson_3_ComboBox.FormattingEnabled = true;
+            FridayLesson_3_ComboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            FridayLesson_3_ComboBox.Location = new Point(631, 347);
+            FridayLesson_3_ComboBox.Name = "FridayLesson_3_ComboBox";
+            FridayLesson_3_ComboBox.Size = new Size(116, 28);
+            FridayLesson_3_ComboBox.TabIndex = 50;
+            // 
+            // ThursdayLesson_3_ComboBox
+            // 
+            ThursdayLesson_3_ComboBox.FormattingEnabled = true;
+            ThursdayLesson_3_ComboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            ThursdayLesson_3_ComboBox.Location = new Point(506, 347);
+            ThursdayLesson_3_ComboBox.Name = "ThursdayLesson_3_ComboBox";
+            ThursdayLesson_3_ComboBox.Size = new Size(116, 28);
+            ThursdayLesson_3_ComboBox.TabIndex = 49;
+            // 
+            // WednesdayLesson_3_ComboBox
+            // 
+            WednesdayLesson_3_ComboBox.FormattingEnabled = true;
+            WednesdayLesson_3_ComboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            WednesdayLesson_3_ComboBox.Location = new Point(381, 347);
+            WednesdayLesson_3_ComboBox.Name = "WednesdayLesson_3_ComboBox";
+            WednesdayLesson_3_ComboBox.Size = new Size(116, 28);
+            WednesdayLesson_3_ComboBox.TabIndex = 48;
+            // 
+            // TuesdayLesson_3_ComboBox
+            // 
+            TuesdayLesson_3_ComboBox.FormattingEnabled = true;
+            TuesdayLesson_3_ComboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            TuesdayLesson_3_ComboBox.Location = new Point(256, 347);
+            TuesdayLesson_3_ComboBox.Name = "TuesdayLesson_3_ComboBox";
+            TuesdayLesson_3_ComboBox.Size = new Size(116, 28);
+            TuesdayLesson_3_ComboBox.TabIndex = 47;
+            // 
+            // MondayLesson_3_СomboBox
+            // 
+            MondayLesson_3_СomboBox.FormattingEnabled = true;
+            MondayLesson_3_СomboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            MondayLesson_3_СomboBox.Location = new Point(131, 347);
+            MondayLesson_3_СomboBox.Name = "MondayLesson_3_СomboBox";
+            MondayLesson_3_СomboBox.Size = new Size(116, 28);
+            MondayLesson_3_СomboBox.TabIndex = 46;
+            // 
+            // SaturdayLesson_2_ComboBox
+            // 
+            SaturdayLesson_2_ComboBox.FormattingEnabled = true;
+            SaturdayLesson_2_ComboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            SaturdayLesson_2_ComboBox.Location = new Point(756, 187);
+            SaturdayLesson_2_ComboBox.Name = "SaturdayLesson_2_ComboBox";
+            SaturdayLesson_2_ComboBox.Size = new Size(117, 28);
+            SaturdayLesson_2_ComboBox.TabIndex = 45;
+            // 
+            // FridayLesson_2_ComboBox
+            // 
+            FridayLesson_2_ComboBox.FormattingEnabled = true;
+            FridayLesson_2_ComboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            FridayLesson_2_ComboBox.Location = new Point(631, 187);
+            FridayLesson_2_ComboBox.Name = "FridayLesson_2_ComboBox";
+            FridayLesson_2_ComboBox.Size = new Size(116, 28);
+            FridayLesson_2_ComboBox.TabIndex = 44;
+            // 
+            // ThursdayLesson_2_ComboBox
+            // 
+            ThursdayLesson_2_ComboBox.FormattingEnabled = true;
+            ThursdayLesson_2_ComboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            ThursdayLesson_2_ComboBox.Location = new Point(506, 187);
+            ThursdayLesson_2_ComboBox.Name = "ThursdayLesson_2_ComboBox";
+            ThursdayLesson_2_ComboBox.Size = new Size(116, 28);
+            ThursdayLesson_2_ComboBox.TabIndex = 43;
+            // 
+            // WednesdayLesson_2_ComboBox
+            // 
+            WednesdayLesson_2_ComboBox.FormattingEnabled = true;
+            WednesdayLesson_2_ComboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            WednesdayLesson_2_ComboBox.Location = new Point(381, 187);
+            WednesdayLesson_2_ComboBox.Name = "WednesdayLesson_2_ComboBox";
+            WednesdayLesson_2_ComboBox.Size = new Size(116, 28);
+            WednesdayLesson_2_ComboBox.TabIndex = 42;
+            // 
+            // TuesdayLesson_2_ComboBox
+            // 
+            TuesdayLesson_2_ComboBox.FormattingEnabled = true;
+            TuesdayLesson_2_ComboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            TuesdayLesson_2_ComboBox.Location = new Point(256, 187);
+            TuesdayLesson_2_ComboBox.Name = "TuesdayLesson_2_ComboBox";
+            TuesdayLesson_2_ComboBox.Size = new Size(116, 28);
+            TuesdayLesson_2_ComboBox.TabIndex = 41;
+            // 
+            // MondayLesson_2_СomboBox
+            // 
+            MondayLesson_2_СomboBox.FormattingEnabled = true;
+            MondayLesson_2_СomboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            MondayLesson_2_СomboBox.Location = new Point(131, 187);
+            MondayLesson_2_СomboBox.Name = "MondayLesson_2_СomboBox";
+            MondayLesson_2_СomboBox.Size = new Size(116, 28);
+            MondayLesson_2_СomboBox.TabIndex = 40;
+            // 
+            // SaturdayLesson_1_ComboBox
+            // 
+            SaturdayLesson_1_ComboBox.FormattingEnabled = true;
+            SaturdayLesson_1_ComboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            SaturdayLesson_1_ComboBox.Location = new Point(756, 47);
+            SaturdayLesson_1_ComboBox.Name = "SaturdayLesson_1_ComboBox";
+            SaturdayLesson_1_ComboBox.Size = new Size(117, 28);
+            SaturdayLesson_1_ComboBox.TabIndex = 39;
+            // 
+            // FridayLesson_1_ComboBox
+            // 
+            FridayLesson_1_ComboBox.FormattingEnabled = true;
+            FridayLesson_1_ComboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            FridayLesson_1_ComboBox.Location = new Point(631, 47);
+            FridayLesson_1_ComboBox.Name = "FridayLesson_1_ComboBox";
+            FridayLesson_1_ComboBox.Size = new Size(116, 28);
+            FridayLesson_1_ComboBox.TabIndex = 38;
+            // 
+            // ThursdayLesson_1_ComboBox
+            // 
+            ThursdayLesson_1_ComboBox.FormattingEnabled = true;
+            ThursdayLesson_1_ComboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            ThursdayLesson_1_ComboBox.Location = new Point(506, 47);
+            ThursdayLesson_1_ComboBox.Name = "ThursdayLesson_1_ComboBox";
+            ThursdayLesson_1_ComboBox.Size = new Size(116, 28);
+            ThursdayLesson_1_ComboBox.TabIndex = 37;
+            // 
+            // WednesdayLesson_1_ComboBox
+            // 
+            WednesdayLesson_1_ComboBox.FormattingEnabled = true;
+            WednesdayLesson_1_ComboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            WednesdayLesson_1_ComboBox.Location = new Point(381, 47);
+            WednesdayLesson_1_ComboBox.Name = "WednesdayLesson_1_ComboBox";
+            WednesdayLesson_1_ComboBox.Size = new Size(116, 28);
+            WednesdayLesson_1_ComboBox.TabIndex = 36;
+            // 
+            // TuesdayLesson_1_ComboBox
+            // 
+            TuesdayLesson_1_ComboBox.FormattingEnabled = true;
+            TuesdayLesson_1_ComboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            TuesdayLesson_1_ComboBox.Location = new Point(256, 47);
+            TuesdayLesson_1_ComboBox.Name = "TuesdayLesson_1_ComboBox";
+            TuesdayLesson_1_ComboBox.Size = new Size(116, 28);
+            TuesdayLesson_1_ComboBox.TabIndex = 35;
+            // 
+            // MondayLesson_1_СomboBox
+            // 
+            MondayLesson_1_СomboBox.FormattingEnabled = true;
+            MondayLesson_1_СomboBox.Items.AddRange(new object[] { "Мат. анализ", "Алгебра и геометрия", "Физическая культура", "Англ. яз" });
+            MondayLesson_1_СomboBox.Location = new Point(131, 47);
+            MondayLesson_1_СomboBox.Name = "MondayLesson_1_СomboBox";
+            MondayLesson_1_СomboBox.Size = new Size(116, 28);
+            MondayLesson_1_СomboBox.TabIndex = 4;
             // 
             // label1
             // 
             label1.BorderStyle = BorderStyle.FixedSingle;
             label1.Dock = DockStyle.Fill;
             label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label1.Location = new Point(107, 0);
+            label1.Location = new Point(131, 3);
             label1.Name = "label1";
-            label1.Size = new Size(139, 39);
+            label1.Size = new Size(116, 38);
             label1.TabIndex = 0;
             label1.Text = "Понедельник";
             label1.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            label2.BackColor = Color.White;
-            label2.BorderStyle = BorderStyle.FixedSingle;
-            label2.Dock = DockStyle.Fill;
-            label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label2.Location = new Point(107, 39);
-            label2.Name = "label2";
-            label2.Size = new Size(139, 141);
-            label2.TabIndex = 1;
-            label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
             label3.BorderStyle = BorderStyle.FixedSingle;
             label3.Dock = DockStyle.Fill;
             label3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label3.Location = new Point(252, 0);
+            label3.Location = new Point(256, 3);
             label3.Name = "label3";
-            label3.Size = new Size(119, 39);
+            label3.Size = new Size(116, 38);
             label3.TabIndex = 2;
             label3.Text = "Вторник";
             label3.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            label4.BorderStyle = BorderStyle.FixedSingle;
-            label4.Dock = DockStyle.Fill;
-            label4.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label4.Location = new Point(252, 39);
-            label4.Name = "label4";
-            label4.Size = new Size(119, 141);
-            label4.TabIndex = 3;
-            label4.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            label5.BorderStyle = BorderStyle.FixedSingle;
-            label5.Dock = DockStyle.Fill;
-            label5.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label5.Location = new Point(107, 180);
-            label5.Name = "label5";
-            label5.Size = new Size(139, 161);
-            label5.TabIndex = 4;
-            label5.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
             label6.BorderStyle = BorderStyle.FixedSingle;
             label6.Dock = DockStyle.Fill;
             label6.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label6.Location = new Point(377, 0);
+            label6.Location = new Point(381, 3);
             label6.Name = "label6";
-            label6.Size = new Size(119, 39);
+            label6.Size = new Size(116, 38);
             label6.TabIndex = 5;
             label6.Text = "Среда";
             label6.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            label7.BorderStyle = BorderStyle.FixedSingle;
-            label7.Dock = DockStyle.Fill;
-            label7.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label7.Location = new Point(377, 39);
-            label7.Name = "label7";
-            label7.Size = new Size(119, 141);
-            label7.TabIndex = 6;
-            label7.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            label8.BorderStyle = BorderStyle.FixedSingle;
-            label8.Dock = DockStyle.Fill;
-            label8.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label8.Location = new Point(252, 180);
-            label8.Name = "label8";
-            label8.Size = new Size(119, 161);
-            label8.TabIndex = 7;
-            label8.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            label9.BorderStyle = BorderStyle.FixedSingle;
-            label9.Dock = DockStyle.Fill;
-            label9.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label9.Location = new Point(107, 341);
-            label9.Name = "label9";
-            label9.Size = new Size(139, 161);
-            label9.TabIndex = 8;
-            label9.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label10
-            // 
-            label10.BorderStyle = BorderStyle.FixedSingle;
-            label10.Dock = DockStyle.Fill;
-            label10.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label10.Location = new Point(252, 341);
-            label10.Name = "label10";
-            label10.Size = new Size(119, 161);
-            label10.TabIndex = 9;
-            label10.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label11
-            // 
-            label11.BorderStyle = BorderStyle.FixedSingle;
-            label11.Dock = DockStyle.Fill;
-            label11.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label11.Location = new Point(377, 341);
-            label11.Name = "label11";
-            label11.Size = new Size(119, 161);
-            label11.TabIndex = 10;
-            label11.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label12
-            // 
-            label12.BorderStyle = BorderStyle.FixedSingle;
-            label12.Dock = DockStyle.Fill;
-            label12.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label12.Location = new Point(377, 180);
-            label12.Name = "label12";
-            label12.Size = new Size(119, 161);
-            label12.TabIndex = 11;
-            label12.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label13
             // 
             label13.BorderStyle = BorderStyle.FixedSingle;
             label13.Dock = DockStyle.Fill;
             label13.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label13.Location = new Point(502, 0);
+            label13.Location = new Point(506, 3);
             label13.Name = "label13";
-            label13.Size = new Size(119, 39);
+            label13.Size = new Size(116, 38);
             label13.TabIndex = 12;
             label13.Text = "Четверг";
             label13.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label14
-            // 
-            label14.BorderStyle = BorderStyle.FixedSingle;
-            label14.Dock = DockStyle.Fill;
-            label14.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label14.Location = new Point(502, 39);
-            label14.Name = "label14";
-            label14.Size = new Size(119, 141);
-            label14.TabIndex = 13;
-            label14.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label15
             // 
             label15.BorderStyle = BorderStyle.FixedSingle;
             label15.Dock = DockStyle.Fill;
             label15.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label15.Location = new Point(627, 0);
+            label15.Location = new Point(631, 3);
             label15.Name = "label15";
-            label15.Size = new Size(119, 39);
+            label15.Size = new Size(116, 38);
             label15.TabIndex = 14;
             label15.Text = "Пятница";
             label15.TextAlign = ContentAlignment.MiddleCenter;
@@ -464,175 +581,21 @@
             label16.BorderStyle = BorderStyle.FixedSingle;
             label16.Dock = DockStyle.Fill;
             label16.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label16.Location = new Point(752, 0);
+            label16.Location = new Point(756, 3);
             label16.Name = "label16";
-            label16.Size = new Size(124, 39);
+            label16.Size = new Size(117, 38);
             label16.TabIndex = 15;
             label16.Text = "Суббота";
             label16.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label17
-            // 
-            label17.BorderStyle = BorderStyle.FixedSingle;
-            label17.Dock = DockStyle.Fill;
-            label17.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label17.Location = new Point(627, 39);
-            label17.Name = "label17";
-            label17.Size = new Size(119, 141);
-            label17.TabIndex = 16;
-            label17.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label18
-            // 
-            label18.BorderStyle = BorderStyle.FixedSingle;
-            label18.Dock = DockStyle.Fill;
-            label18.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label18.Location = new Point(752, 39);
-            label18.Name = "label18";
-            label18.Size = new Size(124, 141);
-            label18.TabIndex = 17;
-            label18.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label19
-            // 
-            label19.BorderStyle = BorderStyle.FixedSingle;
-            label19.Dock = DockStyle.Fill;
-            label19.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label19.Location = new Point(502, 180);
-            label19.Name = "label19";
-            label19.Size = new Size(119, 161);
-            label19.TabIndex = 18;
-            label19.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label20
-            // 
-            label20.BorderStyle = BorderStyle.FixedSingle;
-            label20.Dock = DockStyle.Fill;
-            label20.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label20.Location = new Point(627, 180);
-            label20.Name = "label20";
-            label20.Size = new Size(119, 161);
-            label20.TabIndex = 19;
-            label20.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label21
-            // 
-            label21.BorderStyle = BorderStyle.FixedSingle;
-            label21.Dock = DockStyle.Fill;
-            label21.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label21.Location = new Point(752, 180);
-            label21.Name = "label21";
-            label21.Size = new Size(124, 161);
-            label21.TabIndex = 20;
-            label21.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label22
-            // 
-            label22.BorderStyle = BorderStyle.FixedSingle;
-            label22.Dock = DockStyle.Fill;
-            label22.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label22.Location = new Point(502, 341);
-            label22.Name = "label22";
-            label22.Size = new Size(119, 161);
-            label22.TabIndex = 21;
-            label22.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label23
-            // 
-            label23.BorderStyle = BorderStyle.FixedSingle;
-            label23.Dock = DockStyle.Fill;
-            label23.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label23.Location = new Point(627, 341);
-            label23.Name = "label23";
-            label23.Size = new Size(119, 161);
-            label23.TabIndex = 22;
-            label23.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label24
-            // 
-            label24.BorderStyle = BorderStyle.FixedSingle;
-            label24.Dock = DockStyle.Fill;
-            label24.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label24.Location = new Point(752, 341);
-            label24.Name = "label24";
-            label24.Size = new Size(124, 161);
-            label24.TabIndex = 23;
-            label24.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label25
-            // 
-            label25.BorderStyle = BorderStyle.FixedSingle;
-            label25.Dock = DockStyle.Fill;
-            label25.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label25.Location = new Point(252, 502);
-            label25.Name = "label25";
-            label25.Size = new Size(119, 164);
-            label25.TabIndex = 24;
-            label25.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label26
-            // 
-            label26.BorderStyle = BorderStyle.FixedSingle;
-            label26.Dock = DockStyle.Fill;
-            label26.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label26.Location = new Point(107, 502);
-            label26.Name = "label26";
-            label26.Size = new Size(139, 164);
-            label26.TabIndex = 25;
-            label26.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label27
-            // 
-            label27.BorderStyle = BorderStyle.FixedSingle;
-            label27.Dock = DockStyle.Fill;
-            label27.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label27.Location = new Point(377, 502);
-            label27.Name = "label27";
-            label27.Size = new Size(119, 164);
-            label27.TabIndex = 26;
-            label27.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label28
-            // 
-            label28.BorderStyle = BorderStyle.FixedSingle;
-            label28.Dock = DockStyle.Fill;
-            label28.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label28.Location = new Point(502, 502);
-            label28.Name = "label28";
-            label28.Size = new Size(119, 164);
-            label28.TabIndex = 27;
-            label28.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label29
-            // 
-            label29.BorderStyle = BorderStyle.FixedSingle;
-            label29.Dock = DockStyle.Fill;
-            label29.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label29.Location = new Point(627, 502);
-            label29.Name = "label29";
-            label29.Size = new Size(119, 164);
-            label29.TabIndex = 28;
-            label29.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label30
-            // 
-            label30.BorderStyle = BorderStyle.FixedSingle;
-            label30.Dock = DockStyle.Fill;
-            label30.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label30.Location = new Point(752, 502);
-            label30.Name = "label30";
-            label30.Size = new Size(124, 164);
-            label30.TabIndex = 29;
-            label30.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label31
             // 
             label31.BorderStyle = BorderStyle.FixedSingle;
             label31.Dock = DockStyle.Fill;
             label31.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label31.Location = new Point(3, 39);
+            label31.Location = new Point(6, 44);
             label31.Name = "label31";
-            label31.Size = new Size(98, 141);
+            label31.Size = new Size(116, 137);
             label31.TabIndex = 30;
             label31.Text = "8:30-10:00";
             label31.TextAlign = ContentAlignment.MiddleCenter;
@@ -642,9 +605,9 @@
             label32.BorderStyle = BorderStyle.FixedSingle;
             label32.Dock = DockStyle.Fill;
             label32.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label32.Location = new Point(3, 180);
+            label32.Location = new Point(6, 184);
             label32.Name = "label32";
-            label32.Size = new Size(98, 161);
+            label32.Size = new Size(116, 157);
             label32.TabIndex = 31;
             label32.Text = "10:10-11:40";
             label32.TextAlign = ContentAlignment.MiddleCenter;
@@ -654,9 +617,9 @@
             label33.BorderStyle = BorderStyle.FixedSingle;
             label33.Dock = DockStyle.Fill;
             label33.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label33.Location = new Point(3, 341);
+            label33.Location = new Point(6, 344);
             label33.Name = "label33";
-            label33.Size = new Size(98, 161);
+            label33.Size = new Size(116, 157);
             label33.TabIndex = 32;
             label33.Text = "12:10-13:40";
             label33.TextAlign = ContentAlignment.MiddleCenter;
@@ -666,9 +629,9 @@
             label34.BorderStyle = BorderStyle.FixedSingle;
             label34.Dock = DockStyle.Fill;
             label34.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label34.Location = new Point(3, 502);
+            label34.Location = new Point(6, 504);
             label34.Name = "label34";
-            label34.Size = new Size(98, 164);
+            label34.Size = new Size(116, 159);
             label34.TabIndex = 33;
             label34.Text = "13:50-15:20";
             label34.TextAlign = ContentAlignment.MiddleCenter;
@@ -677,7 +640,7 @@
             // 
             schedulePanel.BackColor = Color.White;
             schedulePanel.Controls.Add(btnSave);
-            schedulePanel.Controls.Add(btnClearTable);
+            schedulePanel.Controls.Add(BtnClearTable);
             schedulePanel.Controls.Add(SelectGroup);
             schedulePanel.Controls.Add(tableLayoutPanel1);
             schedulePanel.Dock = DockStyle.Fill;
@@ -698,29 +661,33 @@
             btnSave.TabIndex = 7;
             btnSave.Text = "Сохранить расписание\r\n";
             btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += BtnSave_Click;
             // 
-            // btnClearTable
+            // BtnClearTable
             // 
-            btnClearTable.BackColor = Color.White;
-            btnClearTable.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            btnClearTable.Location = new Point(337, 4);
-            btnClearTable.Margin = new Padding(3, 4, 3, 4);
-            btnClearTable.Name = "btnClearTable";
-            btnClearTable.Size = new Size(192, 35);
-            btnClearTable.TabIndex = 6;
-            btnClearTable.Text = "Очистить таблицу";
-            btnClearTable.UseVisualStyleBackColor = false;
+            BtnClearTable.BackColor = Color.White;
+            BtnClearTable.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            BtnClearTable.Location = new Point(337, 4);
+            BtnClearTable.Margin = new Padding(3, 4, 3, 4);
+            BtnClearTable.Name = "BtnClearTable";
+            BtnClearTable.Size = new Size(192, 35);
+            BtnClearTable.TabIndex = 6;
+            BtnClearTable.Text = "Очистить таблицу";
+            BtnClearTable.UseVisualStyleBackColor = false;
+            BtnClearTable.Click += BtnClearTable_Click;
             // 
             // SelectGroup
             // 
             SelectGroup.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 204);
             SelectGroup.FormattingEnabled = true;
-            SelectGroup.Location = new Point(110, 4);
+            SelectGroup.Items.AddRange(new object[] { "09-321", "09-322" });
+            SelectGroup.Location = new Point(110, 8);
             SelectGroup.Margin = new Padding(3, 4, 3, 4);
             SelectGroup.Name = "SelectGroup";
             SelectGroup.Size = new Size(221, 28);
             SelectGroup.TabIndex = 5;
             SelectGroup.Text = "Выбрать группу";
+            SelectGroup.SelectedIndexChanged += SelectGroup_SelectedIndexChanged;
             // 
             // ChengeGroupsPanel
             // 
@@ -885,42 +852,18 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Panel schedulePanel;
         private System.Windows.Forms.ComboBox SelectGroup;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnClearTable;
+        private System.Windows.Forms.Button BtnClearTable;
         private System.Windows.Forms.Panel ChengeGroupsPanel;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage Schedule;
@@ -932,5 +875,30 @@
         private System.Windows.Forms.TextBox AddStudentIdTextBox;
         private Label label35;
         private Button BtnAddEvaluation;
+        private ComboBox SaturdayLesson_4_ComboBox;
+        private ComboBox FridayLesson_4_ComboBox;
+        private ComboBox ThursdayLesson_4_ComboBox;
+        private ComboBox WednesdayLesson_4_ComboBox;
+        private ComboBox TuesdayLesson_4_ComboBox;
+        private ComboBox MondayLesson_4_СomboBox;
+        private ComboBox SaturdayLesson_3_ComboBox;
+        private ComboBox FridayLesson_3_ComboBox;
+        private ComboBox ThursdayLesson_3_ComboBox;
+        private ComboBox WednesdayLesson_3_ComboBox;
+        private ComboBox TuesdayLesson_3_ComboBox;
+        private ComboBox MondayLesson_3_СomboBox;
+        private ComboBox SaturdayLesson_2_ComboBox;
+        private ComboBox FridayLesson_2_ComboBox;
+        private ComboBox ThursdayLesson_2_ComboBox;
+        private ComboBox WednesdayLesson_2_ComboBox;
+        private ComboBox TuesdayLesson_2_ComboBox;
+        private ComboBox MondayLesson_2_СomboBox;
+        private ComboBox SaturdayLesson_1_ComboBox;
+        private ComboBox FridayLesson_1_ComboBox;
+        private ComboBox ThursdayLesson_1_ComboBox;
+        private ComboBox WednesdayLesson_1_ComboBox;
+        private ComboBox TuesdayLesson_1_ComboBox;
+        private ComboBox MondayLesson_1_СomboBox;
+        private Button BtnExitFromAcount;
     }
 }

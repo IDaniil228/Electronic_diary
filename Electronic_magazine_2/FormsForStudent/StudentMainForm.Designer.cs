@@ -73,6 +73,7 @@
             panel4 = new Panel();
             Evaluations = new Button();
             BtnProfile = new Button();
+            BtnExitFromAcount = new Button();
             UpperPanel.SuspendLayout();
             panel2.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
@@ -669,6 +670,7 @@
             // panel4
             // 
             panel4.BackColor = Color.White;
+            panel4.Controls.Add(BtnExitFromAcount);
             panel4.Controls.Add(Evaluations);
             panel4.Controls.Add(BtnProfile);
             panel4.Location = new Point(0, 316);
@@ -702,6 +704,19 @@
             BtnProfile.Text = "Профиль";
             BtnProfile.UseVisualStyleBackColor = false;
             BtnProfile.Click += BtnProfile_Click;
+            // 
+            // BtnExitFromAcount
+            // 
+            BtnExitFromAcount.BackColor = Color.White;
+            BtnExitFromAcount.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            BtnExitFromAcount.Location = new Point(37, 220);
+            BtnExitFromAcount.Margin = new Padding(3, 4, 3, 4);
+            BtnExitFromAcount.Name = "BtnExitFromAcount";
+            BtnExitFromAcount.Size = new Size(164, 60);
+            BtnExitFromAcount.TabIndex = 7;
+            BtnExitFromAcount.Text = "Выйти из аккаунта";
+            BtnExitFromAcount.UseVisualStyleBackColor = false;
+            BtnExitFromAcount.Click += BtnExitFromAcount_Click;
             // 
             // StudentMainForm
             // 
@@ -775,5 +790,6 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
+        private Button BtnExitFromAcount;
     }
 }

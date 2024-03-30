@@ -33,6 +33,7 @@
             BtnMinimaze = new Button();
             BtnClose = new Button();
             panel2 = new Panel();
+            ShowPassword = new CheckBox();
             EnterLikeLible = new Label();
             SelectRole = new ComboBox();
             AuthorizationLabel = new Label();
@@ -107,6 +108,7 @@
             // panel2
             // 
             panel2.BackColor = Color.White;
+            panel2.Controls.Add(ShowPassword);
             panel2.Controls.Add(EnterLikeLible);
             panel2.Controls.Add(SelectRole);
             panel2.Controls.Add(AuthorizationLabel);
@@ -121,6 +123,17 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(432, 518);
             panel2.TabIndex = 9;
+            // 
+            // ShowPassword
+            // 
+            ShowPassword.AutoSize = true;
+            ShowPassword.Location = new Point(89, 347);
+            ShowPassword.Name = "ShowPassword";
+            ShowPassword.Size = new Size(150, 24);
+            ShowPassword.TabIndex = 10;
+            ShowPassword.Text = "Показать пароль";
+            ShowPassword.UseVisualStyleBackColor = true;
+            ShowPassword.CheckedChanged += ShowPassword_CheckedChanged;
             // 
             // EnterLikeLible
             // 
@@ -176,17 +189,17 @@
             PasswordTextBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
             PasswordTextBox.Location = new Point(89, 303);
             PasswordTextBox.Margin = new Padding(3, 4, 3, 4);
-            PasswordTextBox.Multiline = true;
             PasswordTextBox.Name = "PasswordTextBox";
-            PasswordTextBox.Size = new Size(259, 37);
+            PasswordTextBox.Size = new Size(259, 30);
             PasswordTextBox.TabIndex = 10;
+            PasswordTextBox.UseSystemPasswordChar = true;
             // 
             // LoginTextBox
             // 
             LoginTextBox.BackColor = SystemColors.ControlLight;
             LoginTextBox.Cursor = Cursors.Hand;
             LoginTextBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            LoginTextBox.Location = new Point(89, 207);
+            LoginTextBox.Location = new Point(89, 213);
             LoginTextBox.Margin = new Padding(3, 4, 3, 4);
             LoginTextBox.Multiline = true;
             LoginTextBox.Name = "LoginTextBox";
@@ -207,7 +220,7 @@
             // 
             LoginLabel.AutoSize = true;
             LoginLabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            LoginLabel.Location = new Point(84, 172);
+            LoginLabel.Location = new Point(84, 178);
             LoginLabel.Name = "LoginLabel";
             LoginLabel.Size = new Size(73, 25);
             LoginLabel.TabIndex = 7;
@@ -248,6 +261,7 @@
         private System.Windows.Forms.Button BtnMinimaze;
         private ComboBox SelectRole;
         private Label EnterLikeLible;
+        private CheckBox ShowPassword;
     }
 }
 

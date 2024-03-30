@@ -125,7 +125,7 @@
             GroupComboBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             GroupComboBox.FormattingEnabled = true;
             GroupComboBox.Items.AddRange(new object[] { "09-321", "09-322" });
-            GroupComboBox.Location = new Point(377, 317);
+            GroupComboBox.Location = new Point(361, 317);
             GroupComboBox.Name = "GroupComboBox";
             GroupComboBox.Size = new Size(259, 36);
             GroupComboBox.TabIndex = 52;
@@ -150,7 +150,7 @@
             // 
             GroupLable.Enabled = false;
             GroupLable.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            GroupLable.Location = new Point(377, 281);
+            GroupLable.Location = new Point(361, 281);
             GroupLable.Name = "GroupLable";
             GroupLable.Size = new Size(88, 35);
             GroupLable.TabIndex = 49;
@@ -164,7 +164,7 @@
             PasswordTextBox.Cursor = Cursors.Hand;
             PasswordTextBox.Enabled = false;
             PasswordTextBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            PasswordTextBox.Location = new Point(377, 219);
+            PasswordTextBox.Location = new Point(361, 219);
             PasswordTextBox.Margin = new Padding(3, 4, 3, 4);
             PasswordTextBox.Multiline = true;
             PasswordTextBox.Name = "PasswordTextBox";
@@ -177,7 +177,7 @@
             LoginTextBox.Cursor = Cursors.Hand;
             LoginTextBox.Enabled = false;
             LoginTextBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            LoginTextBox.Location = new Point(377, 126);
+            LoginTextBox.Location = new Point(361, 126);
             LoginTextBox.Margin = new Padding(3, 4, 3, 4);
             LoginTextBox.Multiline = true;
             LoginTextBox.Name = "LoginTextBox";
@@ -187,7 +187,7 @@
             // LoginLable
             // 
             LoginLable.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            LoginLable.Location = new Point(377, 87);
+            LoginLable.Location = new Point(361, 87);
             LoginLable.Name = "LoginLable";
             LoginLable.Size = new Size(88, 35);
             LoginLable.TabIndex = 46;
@@ -197,7 +197,7 @@
             // PasswordLable
             // 
             PasswordLable.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            PasswordLable.Location = new Point(377, 180);
+            PasswordLable.Location = new Point(361, 180);
             PasswordLable.Name = "PasswordLable";
             PasswordLable.Size = new Size(88, 35);
             PasswordLable.TabIndex = 45;
@@ -210,7 +210,7 @@
             PatronymicTextBox.Cursor = Cursors.Hand;
             PatronymicTextBox.Enabled = false;
             PatronymicTextBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            PatronymicTextBox.Location = new Point(12, 320);
+            PatronymicTextBox.Location = new Point(34, 320);
             PatronymicTextBox.Margin = new Padding(3, 4, 3, 4);
             PatronymicTextBox.Multiline = true;
             PatronymicTextBox.Name = "PatronymicTextBox";
@@ -223,7 +223,7 @@
             SurnameTextBox.Cursor = Cursors.Hand;
             SurnameTextBox.Enabled = false;
             SurnameTextBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            SurnameTextBox.Location = new Point(12, 219);
+            SurnameTextBox.Location = new Point(34, 219);
             SurnameTextBox.Margin = new Padding(3, 4, 3, 4);
             SurnameTextBox.Multiline = true;
             SurnameTextBox.Name = "SurnameTextBox";
@@ -236,7 +236,7 @@
             NameTextBox.Cursor = Cursors.Hand;
             NameTextBox.Enabled = false;
             NameTextBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            NameTextBox.Location = new Point(12, 126);
+            NameTextBox.Location = new Point(34, 126);
             NameTextBox.Margin = new Padding(3, 4, 3, 4);
             NameTextBox.Multiline = true;
             NameTextBox.Name = "NameTextBox";
@@ -246,7 +246,7 @@
             // PatronymicLabel
             // 
             PatronymicLabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            PatronymicLabel.Location = new Point(0, 281);
+            PatronymicLabel.Location = new Point(22, 281);
             PatronymicLabel.Name = "PatronymicLabel";
             PatronymicLabel.Size = new Size(134, 35);
             PatronymicLabel.TabIndex = 41;
@@ -256,7 +256,7 @@
             // SurnameLabel
             // 
             SurnameLabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            SurnameLabel.Location = new Point(3, 180);
+            SurnameLabel.Location = new Point(25, 180);
             SurnameLabel.Name = "SurnameLabel";
             SurnameLabel.Size = new Size(131, 35);
             SurnameLabel.TabIndex = 40;
@@ -266,7 +266,7 @@
             // NameLabel
             // 
             NameLabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            NameLabel.Location = new Point(3, 87);
+            NameLabel.Location = new Point(25, 87);
             NameLabel.Name = "NameLabel";
             NameLabel.Size = new Size(88, 35);
             NameLabel.TabIndex = 39;

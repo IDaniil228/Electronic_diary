@@ -99,8 +99,8 @@ namespace Electronic_diary.FormsForAdmin
                     newStudent.Password = PasswordTextBox.Text;
                     newStudent.NumberGroup = GroupComboBox.Text;
                     context.Students.Add(newStudent);
+
                     //Note newNote = new Note();
-                    //newNote.StudentId = newStudent.StudentId;
                     //context.Notes.Add(newNote);
                     //AlgemGrade newAlgemGrade = new AlgemGrade();
                     //newAlgemGrade.StudentId = newStudent.StudentId;
@@ -114,6 +114,7 @@ namespace Electronic_diary.FormsForAdmin
                     //Pegrade newPegrade = new Pegrade();
                     //newPegrade.StudentId = newStudent.StudentId;
                     //context.Pegrades.Add(newPegrade);
+
                     context.SaveChanges();
                     MessageBox.Show("Новый студент зарегистрирован", "Регистрация", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Close();

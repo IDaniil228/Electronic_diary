@@ -70,7 +70,9 @@ public partial class DiaryContext : DbContext
 
         modelBuilder.Entity<AlgemGrade>(entity =>
         {
-            entity.HasNoKey();
+            entity.HasKey(x => x.StudentId);
+
+            entity.ToTable("AlgemGrades");
 
             entity.HasIndex(e => e.StudentId, "IX_AlgemGrades_StudentId").IsUnique();
 
@@ -86,7 +88,9 @@ public partial class DiaryContext : DbContext
 
         modelBuilder.Entity<EnglishGrade>(entity =>
         {
-            entity.HasNoKey();
+            entity.HasKey(x => x.StudentId);
+
+            entity.ToTable("EnglishGrades");
 
             entity.HasIndex(e => e.StudentId, "IX_EnglishGrades_StudentId").IsUnique();
 
@@ -140,7 +144,9 @@ public partial class DiaryContext : DbContext
 
         modelBuilder.Entity<MatanalysisGrade>(entity =>
         {
-            entity.HasNoKey();
+            entity.HasKey(x => x.StudentId);
+
+            entity.ToTable("MatanalysisGrades");
 
             entity.HasIndex(e => e.StudentId, "IX_MatanalysisGrades_StudentId").IsUnique();
 
@@ -183,7 +189,9 @@ public partial class DiaryContext : DbContext
 
         modelBuilder.Entity<Note>(entity =>
         {
-            entity.HasNoKey();
+            entity.HasKey(x => x.StudentId);
+
+            entity.ToTable("Notes");
 
             entity.HasIndex(e => e.StudentId, "IX_Notes_studentId").IsUnique();
 
@@ -200,9 +208,9 @@ public partial class DiaryContext : DbContext
 
         modelBuilder.Entity<Pegrade>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("PEGrades");
+            entity.HasKey(s => s.StudentId);
+
+            entity.ToTable("PEGrades");
 
             entity.HasIndex(e => e.StudentId, "IX_PEGrades_StudentId").IsUnique();
 

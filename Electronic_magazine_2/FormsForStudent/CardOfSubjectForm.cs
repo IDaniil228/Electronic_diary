@@ -22,7 +22,7 @@ namespace Electronic_magazine
                 CurrentData.CurrentStudent.StudentId).Single();
                 switch (CurrentData.CurrentSubject.Title)
                 {
-                    case "Мат.анализ":
+                    case "Мат. анализ":
                         note.Matanalysis = NotesRichTextBox.Text;
                         break;
                     case "Алгебра и геометрия":
@@ -31,7 +31,7 @@ namespace Electronic_magazine
                     case "Физическая культура":
                         note.Physical = NotesRichTextBox.Text;
                         break;
-                    case "Анлг. яз":
+                    case "Англ. яз":
                         note.English = NotesRichTextBox.Text;
                         break;
                 }
@@ -65,11 +65,12 @@ namespace Electronic_magazine
                 {
                     NotesRichTextBox.Text = note.Physical;
                 }
-                else if (CurrentData.CurrentSubject.Title == "Анлг. яз")
+                else if (CurrentData.CurrentSubject.Title == "Англ. яз")
                 {
                     NotesRichTextBox.Text = note.English;
                 }
             }
         }
+
     }
 }
