@@ -52,7 +52,7 @@ namespace Electronic_diary.FormsForAdmin
                 SurnameTextBox.Enabled = true;
                 PatronymicTextBox.Enabled = true;
                 LoginTextBox.Enabled = true;
-                PasswordLable.Enabled = true;
+                PasswordTextBox.Enabled = true;
                 GroupComboBox.Visible = false;
                 GroupComboBox.Enabled = false;
                 GroupLable.Enabled = false;
@@ -66,10 +66,22 @@ namespace Electronic_diary.FormsForAdmin
         /// <param name="e"></param>
         private void BtnEnter_Click(object sender, EventArgs e)
         {
+            if (NameTextBox.Text == string.Empty || SurnameTextBox.Text == string.Empty ||
+                PatronymicTextBox.Text == string.Empty || LoginTextBox.Text == string.Empty ||
+                PasswordTextBox.Text == string.Empty)
+            {
+                MessageBox.Show("Заполнены не все данные", "Ошибка регистрации");
+                return;
+            }
             using (var context = new DiaryContext())
             {
                 if (SelectRole.Text == "Студент")
                 {
+                    if (GroupComboBox.Text == string.Empty)
+                    {
+                        MessageBox.Show("Необходимо выбрать группу", "Ошибка регистрации");
+                        return;
+                    }
                     var students = context.Students;
                     foreach (var student in students)
                     {
@@ -87,6 +99,21 @@ namespace Electronic_diary.FormsForAdmin
                     newStudent.Password = PasswordTextBox.Text;
                     newStudent.NumberGroup = GroupComboBox.Text;
                     context.Students.Add(newStudent);
+                    //Note newNote = new Note();
+                    //newNote.StudentId = newStudent.StudentId;
+                    //context.Notes.Add(newNote);
+                    //AlgemGrade newAlgemGrade = new AlgemGrade();
+                    //newAlgemGrade.StudentId = newStudent.StudentId;
+                    //context.AlgemGrades.Add(newAlgemGrade);
+                    //EnglishGrade newEnglishGrade = new EnglishGrade();
+                    //newEnglishGrade.StudentId = newStudent.StudentId;
+                    //context.EnglishGrades.Add(newEnglishGrade);
+                    //MatanalysisGrade matanalysisGrade = new MatanalysisGrade();
+                    //matanalysisGrade.StudentId = newStudent.StudentId;
+                    //context.MatanalysisGrades.Add(matanalysisGrade);
+                    //Pegrade newPegrade = new Pegrade();
+                    //newPegrade.StudentId = newStudent.StudentId;
+                    //context.Pegrades.Add(newPegrade);
                     context.SaveChanges();
                     MessageBox.Show("Новый студент зарегистрирован", "Регистрация", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Close();
@@ -110,9 +137,11 @@ namespace Electronic_diary.FormsForAdmin
                     newAdmin.Password = PasswordTextBox.Text;
                     context.Admins.Add(newAdmin);
                     context.SaveChanges();
-                    MessageBox.Show("Новый студент зарегистрирован", "Регистрация", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Close();
+                    MessageBox.Show("Новый aдминистратор зарегистрирован", "Регистрация", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+                Close();
+
+
             }
         }
     }

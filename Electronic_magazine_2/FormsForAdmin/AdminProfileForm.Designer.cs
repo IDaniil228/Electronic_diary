@@ -272,6 +272,7 @@
             MaximizeBox = false;
             Name = "AdminProfileForm";
             SizeGripStyle = SizeGripStyle.Show;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Журнал";
             Load += AdminProfileForm_Load;
             panel1.ResumeLayout(false);

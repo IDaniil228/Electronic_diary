@@ -15,6 +15,7 @@ namespace Electronic_magazine
         private void BtnClose_Click(object sender, EventArgs e)
         {
             Close();
+            Application.Exit();
         }
 
         private void BtnMinimaze_Click(object sender, EventArgs e)

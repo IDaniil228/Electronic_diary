@@ -77,12 +77,12 @@
             btnClearTable = new Button();
             SelectGroup = new ComboBox();
             ChengeGroupsPanel = new Panel();
-            btnAdd = new Button();
-            textBox1 = new TextBox();
-            btnClearGroup = new Button();
+            label35 = new Label();
+            BtnAdd = new Button();
+            AddStudentIdTextBox = new TextBox();
             BtnSaveGroup = new Button();
             SelectGroupComboBox = new ComboBox();
-            listView1 = new ListView();
+            ListOfStudentListView = new ListView();
             tabControl1 = new TabControl();
             Schedule = new TabPage();
             Groups = new TabPage();
@@ -709,12 +709,12 @@
             // ChengeGroupsPanel
             // 
             ChengeGroupsPanel.BackColor = SystemColors.Control;
-            ChengeGroupsPanel.Controls.Add(btnAdd);
-            ChengeGroupsPanel.Controls.Add(textBox1);
-            ChengeGroupsPanel.Controls.Add(btnClearGroup);
+            ChengeGroupsPanel.Controls.Add(label35);
+            ChengeGroupsPanel.Controls.Add(BtnAdd);
+            ChengeGroupsPanel.Controls.Add(AddStudentIdTextBox);
             ChengeGroupsPanel.Controls.Add(BtnSaveGroup);
             ChengeGroupsPanel.Controls.Add(SelectGroupComboBox);
-            ChengeGroupsPanel.Controls.Add(listView1);
+            ChengeGroupsPanel.Controls.Add(ListOfStudentListView);
             ChengeGroupsPanel.Dock = DockStyle.Fill;
             ChengeGroupsPanel.Location = new Point(3, 4);
             ChengeGroupsPanel.Margin = new Padding(3, 4, 3, 4);
@@ -722,39 +722,36 @@
             ChengeGroupsPanel.Size = new Size(885, 710);
             ChengeGroupsPanel.TabIndex = 36;
             // 
-            // btnAdd
+            // label35
             // 
-            btnAdd.BackColor = Color.White;
-            btnAdd.FlatStyle = FlatStyle.Popup;
-            btnAdd.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            btnAdd.Location = new Point(716, 232);
-            btnAdd.Margin = new Padding(3, 4, 3, 4);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(151, 48);
-            btnAdd.TabIndex = 15;
-            btnAdd.Text = "Добавить\r\n";
-            btnAdd.UseVisualStyleBackColor = false;
+            label35.AutoSize = true;
+            label35.Location = new Point(688, 144);
+            label35.Name = "label35";
+            label35.Size = new Size(87, 20);
+            label35.TabIndex = 16;
+            label35.Text = "ID студента";
             // 
-            // textBox1
+            // BtnAdd
             // 
-            textBox1.Location = new Point(694, 165);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(183, 27);
-            textBox1.TabIndex = 14;
+            BtnAdd.BackColor = Color.White;
+            BtnAdd.FlatStyle = FlatStyle.Popup;
+            BtnAdd.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            BtnAdd.Location = new Point(706, 234);
+            BtnAdd.Margin = new Padding(3, 4, 3, 4);
+            BtnAdd.Name = "BtnAdd";
+            BtnAdd.Size = new Size(151, 48);
+            BtnAdd.TabIndex = 15;
+            BtnAdd.Text = "Добавить\r\n";
+            BtnAdd.UseVisualStyleBackColor = false;
+            BtnAdd.Click += BtnAdd_Click;
             // 
-            // btnClearGroup
+            // AddStudentIdTextBox
             // 
-            btnClearGroup.BackColor = Color.White;
-            btnClearGroup.FlatStyle = FlatStyle.Popup;
-            btnClearGroup.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            btnClearGroup.Location = new Point(433, 14);
-            btnClearGroup.Margin = new Padding(3, 4, 3, 4);
-            btnClearGroup.Name = "btnClearGroup";
-            btnClearGroup.Size = new Size(199, 39);
-            btnClearGroup.TabIndex = 13;
-            btnClearGroup.Text = "Очистить группу\r\n";
-            btnClearGroup.UseVisualStyleBackColor = false;
+            AddStudentIdTextBox.Location = new Point(688, 168);
+            AddStudentIdTextBox.Margin = new Padding(3, 4, 3, 4);
+            AddStudentIdTextBox.Name = "AddStudentIdTextBox";
+            AddStudentIdTextBox.Size = new Size(183, 27);
+            AddStudentIdTextBox.TabIndex = 14;
             // 
             // BtnSaveGroup
             // 
@@ -764,30 +761,34 @@
             BtnSaveGroup.Location = new Point(228, 14);
             BtnSaveGroup.Margin = new Padding(3, 4, 3, 4);
             BtnSaveGroup.Name = "BtnSaveGroup";
-            BtnSaveGroup.Size = new Size(199, 39);
+            BtnSaveGroup.Size = new Size(199, 28);
             BtnSaveGroup.TabIndex = 12;
             BtnSaveGroup.Text = "Сохранить таблицу \r\n";
             BtnSaveGroup.UseVisualStyleBackColor = false;
+            BtnSaveGroup.Click += BtnSaveGroup_Click;
             // 
             // SelectGroupComboBox
             // 
             SelectGroupComboBox.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 204);
             SelectGroupComboBox.FormattingEnabled = true;
+            SelectGroupComboBox.Items.AddRange(new object[] { "09-321", "09-322" });
             SelectGroupComboBox.Location = new Point(14, 14);
             SelectGroupComboBox.Margin = new Padding(3, 4, 3, 4);
             SelectGroupComboBox.Name = "SelectGroupComboBox";
             SelectGroupComboBox.Size = new Size(208, 28);
             SelectGroupComboBox.TabIndex = 11;
             SelectGroupComboBox.Text = "Выберите группу";
+            SelectGroupComboBox.SelectedIndexChanged += SelectGroupComboBox_SelectedIndexChanged;
             // 
-            // listView1
+            // ListOfStudentListView
             // 
-            listView1.Location = new Point(-3, 56);
-            listView1.Margin = new Padding(3, 4, 3, 4);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(676, 654);
-            listView1.TabIndex = 0;
-            listView1.UseCompatibleStateImageBehavior = false;
+            ListOfStudentListView.Location = new Point(0, 61);
+            ListOfStudentListView.Margin = new Padding(3, 4, 3, 4);
+            ListOfStudentListView.Name = "ListOfStudentListView";
+            ListOfStudentListView.Size = new Size(673, 649);
+            ListOfStudentListView.TabIndex = 0;
+            ListOfStudentListView.UseCompatibleStateImageBehavior = false;
+            ListOfStudentListView.View = View.List;
             // 
             // tabControl1
             // 
@@ -837,6 +838,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 4, 3, 4);
             Name = "AdminMainForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += AdminMainForm_Load;
             UpperPanel.ResumeLayout(false);
@@ -907,11 +909,11 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage Schedule;
         private System.Windows.Forms.TabPage Groups;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView ListOfStudentListView;
         private System.Windows.Forms.ComboBox SelectGroupComboBox;
         private System.Windows.Forms.Button BtnSaveGroup;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btnClearGroup;
+        private System.Windows.Forms.Button BtnAdd;
+        private System.Windows.Forms.TextBox AddStudentIdTextBox;
+        private Label label35;
     }
 }

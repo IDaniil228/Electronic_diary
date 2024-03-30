@@ -305,6 +305,7 @@
             Controls.Add(UpperPanel);
             FormBorderStyle = FormBorderStyle.None;
             Name = "AddUserForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "AddUser";
             UpperPanel.ResumeLayout(false);
             panel1.ResumeLayout(false);
